@@ -1,0 +1,15 @@
+plugins {
+    id 'jacoco'
+}
+
+jacoco {
+    toolVersion = "0.8.12"
+}
+
+tasks.jacocoTestReport {
+    dependsOn test // Run tests first
+    reports {
+        xml.required = true
+        html.required = true
+    }
+}
