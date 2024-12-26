@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { LoginRequest, LoginResponse, RegisterRequest, } from '../types/Auth';
 import { Account } from '../types/Account';
 import {apiClient}  from '../utils/apiUtils';

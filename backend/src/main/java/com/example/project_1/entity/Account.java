@@ -1,8 +1,6 @@
 package com.example.project_1.entity;
 
 import jakarta.persistence.*;
-// import jakarta.validation.constraints.NotBlank;
-// import jakarta.validation.constraints.Size;
 import java.util.Objects;
 
 /**
@@ -23,14 +21,12 @@ public class Account {
     /**
      * A username for this Account (must be unique and not blank).
      */
-    // @NotBlank(message = "Username must not be blank") // Validation to ensure it's not blank
     @Column(nullable = false, unique = true) // Enforces uniqueness in the database
     private String username;
 
     /**
-     * A password for this account (must be over 4 characters).
+     * A password for this account
      */
-    // @Size(min = 5, message = "Password must be at least 5 characters long") // Validation for length
     @Column(nullable = false) // Cannot be null in the database
     private String password;
 

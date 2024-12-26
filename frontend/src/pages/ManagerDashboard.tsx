@@ -11,9 +11,7 @@ const ManagerDashboard: React.FC = () => {
       try {
         const ticketData = await getAllTickets();
         setTickets(ticketData);
-        console.log('Fetched tickets:', ticketData);
       } catch (error) {
-        console.error('Error fetching tickets:', error);
       }
     };
 
@@ -30,10 +28,8 @@ const ManagerDashboard: React.FC = () => {
           ticket.ticketId === ticketId ? { ...ticket, status: updatedTicket.status } : ticket
         )
       );
-      console.log('Updated ticket:', updatedTicket);
     } catch (err) {
       setError('Failed to update ticket. Please try again.');
-      console.error('Error updating ticket:', err);
     } finally {
       setUpdatingTicketId(null); // Re-enable button
     }

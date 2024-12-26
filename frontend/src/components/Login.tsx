@@ -4,7 +4,7 @@ import { useAuthContext } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 const Login: React.FC = () => {
-  const { login: loginUser, authState } = useAuthContext();
+  const { login: loginUser} = useAuthContext();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');

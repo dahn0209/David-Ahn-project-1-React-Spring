@@ -1,5 +1,5 @@
 import  {apiClient}  from '../utils/apiUtils';
-import { Ticket, TicketStatus } from '../types/Ticket';
+import { Ticket} from '../types/Ticket';
 
 
 const API_BASE_URL = '/tickets'; // Base path for ticket-related APIs

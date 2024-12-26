@@ -5,7 +5,6 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import EmployeeDashboard from './pages/EmployeeDashboard';
 import ManagerDashboard from './pages/ManagerDashboard';
-// import TicketDetailPage from './pages/TicketDetailPage';
 import NotFoundPage from './pages/NotFoundPage';
 import Navbar from './components/NavBar';
 import Footer from './components/Footer';

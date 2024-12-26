@@ -716,3 +716,529 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2024-12-26T14:21:22.513-05:00  INFO 23701 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-12-26T14:21:22.514-05:00  INFO 23701 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-12-26T14:21:22.785-05:00  INFO 23701 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T14:42:13.385-05:00  INFO 4510 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Starting TicketRepositoryTest using Java 23.0.1 with PID 4510 (started by davidahn in /Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend)
+2024-12-26T14:42:13.388-05:00 DEBUG 4510 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T14:42:13.389-05:00  INFO 4510 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T14:42:14.149-05:00  INFO 4510 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T14:42:14.283-05:00  INFO 4510 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 2 JPA repository interfaces.
+2024-12-26T14:42:14.409-05:00  INFO 4510 --- [demo 2] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-12-26T14:42:14.723-05:00  INFO 4510 --- [demo 2] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:0d99ba2d-d9b8-47fe-a6bb-301364461d80;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-12-26T14:42:15.604-05:00  INFO 4510 --- [demo 2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T14:42:15.791-05:00  INFO 4510 --- [demo 2] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T14:42:15.891-05:00  INFO 4510 --- [demo 2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T14:42:16.697-05:00  INFO 4510 --- [demo 2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T14:42:16.838-05:00  WARN 4510 --- [demo 2] [main] org.hibernate.dialect.Dialect            : HHH000511: The 2.3.232 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-12-26T14:42:16.861-05:00  WARN 4510 --- [demo 2] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T14:42:16.913-05:00  INFO 4510 --- [demo 2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@1926a40f']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T14:42:18.909-05:00  INFO 4510 --- [demo 2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T14:42:19.067-05:00  INFO 4510 --- [demo 2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:42:19.825-05:00  INFO 4510 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Started TicketRepositoryTest in 7.388 seconds (process running for 10.069)
+2024-12-26T14:42:21.236-05:00  INFO 4510 --- [demo 2] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.project_1.repository.AccountRepositoryTest]: AccountRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-26T14:42:21.257-05:00  INFO 4510 --- [demo 2] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.project_1.MainApplication for test class com.example.project_1.repository.AccountRepositoryTest
+2024-12-26T14:42:21.348-05:00  INFO 4510 --- [demo 2] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.project_1.MainApplicationTests]: MainApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-26T14:42:21.364-05:00  INFO 4510 --- [demo 2] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.project_1.MainApplication for test class com.example.project_1.MainApplicationTests
+2024-12-26T14:42:21.390-05:00  INFO 4510 --- [demo 2] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-12-26T14:42:21.449-05:00  INFO 4510 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Starting MainApplicationTests using Java 23.0.1 with PID 4510 (started by davidahn in /Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend)
+2024-12-26T14:42:21.450-05:00 DEBUG 4510 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T14:42:21.451-05:00  INFO 4510 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T14:42:21.455-05:00 DEBUG 4510 --- [demo 2] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@455baacf
+2024-12-26T14:42:21.994-05:00  INFO 4510 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T14:42:22.009-05:00  INFO 4510 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2024-12-26T14:42:22.292-05:00  INFO 4510 --- [demo 2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T14:42:22.294-05:00  INFO 4510 --- [demo 2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T14:42:22.306-05:00  INFO 4510 --- [demo 2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T14:42:22.309-05:00  INFO 4510 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T14:42:23.472-05:00  INFO 4510 --- [demo 2] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@68b11d5c
+2024-12-26T14:42:23.477-05:00  INFO 4510 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T14:42:23.533-05:00  WARN 4510 --- [demo 2] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T14:42:23.593-05:00  INFO 4510 --- [demo 2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T14:42:23.710-05:00  INFO 4510 --- [demo 2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T14:42:23.864-05:00  INFO 4510 --- [demo 2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:42:24.280-05:00  WARN 4510 --- [demo 2] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T14:42:24.451-05:00 DEBUG 4510 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2024-12-26T14:42:24.690-05:00 DEBUG 4510 --- [demo 2] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T14:42:24.759-05:00 DEBUG 4510 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T14:42:24.863-05:00 DEBUG 4510 --- [demo 2] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T14:42:24.987-05:00  INFO 4510 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Started MainApplicationTests in 3.597 seconds (process running for 15.231)
+2024-12-26T14:42:26.133-05:00  INFO 4510 --- [demo 2] [main] c.e.project_1.service.AccountService     : Creating a new account for username: newUser
+2024-12-26T14:42:26.134-05:00  INFO 4510 --- [demo 2] [main] c.e.project_1.service.AccountService     : Account created successfully: Account{accountId=1, username='newUser', password='newPass', role=EMPLOYEE}
+2024-12-26T14:42:26.139-05:00  INFO 4510 --- [demo 2] [main] c.e.project_1.service.AccountService     : Attempting login for username: user1
+2024-12-26T14:42:26.139-05:00  INFO 4510 --- [demo 2] [main] c.e.project_1.service.AccountService     : Login successful for username: user1
+2024-12-26T14:42:26.145-05:00  INFO 4510 --- [demo 2] [main] c.e.project_1.service.AccountService     : Attempting login for username: nonexistentUser
+2024-12-26T14:42:26.145-05:00  WARN 4510 --- [demo 2] [main] c.e.project_1.service.AccountService     : Username not found: nonexistentUser
+2024-12-26T14:42:26.169-05:00  INFO 4510 --- [demo 2] [main] c.e.project_1.service.AccountService     : Fetching all accounts...
+2024-12-26T14:42:26.170-05:00 DEBUG 4510 --- [demo 2] [main] c.e.project_1.service.AccountService     : Fetched accounts: [Account{accountId=1, username='user1', password='pass1', role=EMPLOYEE}, Account{accountId=2, username='user2', password='pass2', role=MANAGER}]
+2024-12-26T14:42:26.175-05:00  INFO 4510 --- [demo 2] [main] c.e.project_1.service.AccountService     : Checking if username exists: existingUser
+2024-12-26T14:42:26.176-05:00 DEBUG 4510 --- [demo 2] [main] c.e.project_1.service.AccountService     : Username 'existingUser' exists: true
+2024-12-26T14:42:26.183-05:00  INFO 4510 --- [demo 2] [main] c.e.project_1.service.AccountService     : Attempting login for username: user1
+2024-12-26T14:42:26.183-05:00  WARN 4510 --- [demo 2] [main] c.e.project_1.service.AccountService     : Invalid password for username: user1
+2024-12-26T14:42:26.212-05:00  INFO 4510 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:42:26.217-05:00 DEBUG 4510 --- [demo 2] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@455baacf, started on Thu Dec 26 14:42:21 EST 2024
+2024-12-26T14:42:26.222-05:00  INFO 4510 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:42:26.224-05:00  INFO 4510 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T14:42:26.490-05:00  INFO 4510 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T14:43:07.103-05:00  INFO 4600 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Starting TicketRepositoryTest using Java 23.0.1 with PID 4600 (started by davidahn in /Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend)
+2024-12-26T14:43:07.106-05:00 DEBUG 4600 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T14:43:07.108-05:00  INFO 4600 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T14:43:08.474-05:00  INFO 4600 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T14:43:08.687-05:00  INFO 4600 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 172 ms. Found 2 JPA repository interfaces.
+2024-12-26T14:43:09.018-05:00  INFO 4600 --- [demo 2] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-12-26T14:43:09.736-05:00  INFO 4600 --- [demo 2] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:86e564ba-7187-4c60-a04e-33c7d529bd85;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-12-26T14:43:10.991-05:00  INFO 4600 --- [demo 2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T14:43:11.168-05:00  INFO 4600 --- [demo 2] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T14:43:11.271-05:00  INFO 4600 --- [demo 2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T14:43:12.155-05:00  INFO 4600 --- [demo 2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T14:43:12.367-05:00  WARN 4600 --- [demo 2] [main] org.hibernate.dialect.Dialect            : HHH000511: The 2.3.232 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-12-26T14:43:12.382-05:00  WARN 4600 --- [demo 2] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T14:43:12.437-05:00  INFO 4600 --- [demo 2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@1926a40f']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T14:43:14.517-05:00  INFO 4600 --- [demo 2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T14:43:14.684-05:00  INFO 4600 --- [demo 2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:43:15.556-05:00  INFO 4600 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Started TicketRepositoryTest in 9.847 seconds (process running for 13.824)
+2024-12-26T14:43:16.990-05:00  INFO 4600 --- [demo 2] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.project_1.repository.AccountRepositoryTest]: AccountRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-26T14:43:17.025-05:00  INFO 4600 --- [demo 2] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.project_1.MainApplication for test class com.example.project_1.repository.AccountRepositoryTest
+2024-12-26T14:43:17.115-05:00  INFO 4600 --- [demo 2] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.project_1.MainApplicationTests]: MainApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-26T14:43:17.135-05:00  INFO 4600 --- [demo 2] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.project_1.MainApplication for test class com.example.project_1.MainApplicationTests
+2024-12-26T14:43:17.159-05:00  INFO 4600 --- [demo 2] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-12-26T14:43:17.206-05:00  INFO 4600 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Starting MainApplicationTests using Java 23.0.1 with PID 4600 (started by davidahn in /Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend)
+2024-12-26T14:43:17.207-05:00 DEBUG 4600 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T14:43:17.207-05:00  INFO 4600 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T14:43:17.209-05:00 DEBUG 4600 --- [demo 2] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@31ccc439
+2024-12-26T14:43:17.733-05:00  INFO 4600 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T14:43:17.751-05:00  INFO 4600 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2024-12-26T14:43:18.041-05:00  INFO 4600 --- [demo 2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T14:43:18.043-05:00  INFO 4600 --- [demo 2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T14:43:18.054-05:00  INFO 4600 --- [demo 2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T14:43:18.057-05:00  INFO 4600 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T14:43:18.996-05:00  INFO 4600 --- [demo 2] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@73a09825
+2024-12-26T14:43:18.999-05:00  INFO 4600 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T14:43:19.057-05:00  WARN 4600 --- [demo 2] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T14:43:19.117-05:00  INFO 4600 --- [demo 2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T14:43:19.216-05:00  INFO 4600 --- [demo 2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T14:43:19.384-05:00  INFO 4600 --- [demo 2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:43:19.796-05:00  WARN 4600 --- [demo 2] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T14:43:19.954-05:00 DEBUG 4600 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2024-12-26T14:43:20.233-05:00 DEBUG 4600 --- [demo 2] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T14:43:20.308-05:00 DEBUG 4600 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T14:43:20.411-05:00 DEBUG 4600 --- [demo 2] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T14:43:20.527-05:00  INFO 4600 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Started MainApplicationTests in 3.368 seconds (process running for 18.795)
+2024-12-26T14:43:21.504-05:00  INFO 4600 --- [demo 2] [main] c.e.project_1.service.AccountService     : Creating a new account for username: newUser
+2024-12-26T14:43:21.505-05:00  INFO 4600 --- [demo 2] [main] c.e.project_1.service.AccountService     : Account created successfully: Account{accountId=1, username='newUser', password='newPass', role=EMPLOYEE}
+2024-12-26T14:43:21.509-05:00  INFO 4600 --- [demo 2] [main] c.e.project_1.service.AccountService     : Attempting login for username: user1
+2024-12-26T14:43:21.510-05:00  INFO 4600 --- [demo 2] [main] c.e.project_1.service.AccountService     : Login successful for username: user1
+2024-12-26T14:43:21.516-05:00  INFO 4600 --- [demo 2] [main] c.e.project_1.service.AccountService     : Attempting login for username: nonexistentUser
+2024-12-26T14:43:21.517-05:00  WARN 4600 --- [demo 2] [main] c.e.project_1.service.AccountService     : Username not found: nonexistentUser
+2024-12-26T14:43:21.521-05:00  INFO 4600 --- [demo 2] [main] c.e.project_1.service.AccountService     : Fetching all accounts...
+2024-12-26T14:43:21.522-05:00 DEBUG 4600 --- [demo 2] [main] c.e.project_1.service.AccountService     : Fetched accounts: [Account{accountId=1, username='user1', password='pass1', role=EMPLOYEE}, Account{accountId=2, username='user2', password='pass2', role=MANAGER}]
+2024-12-26T14:43:21.527-05:00  INFO 4600 --- [demo 2] [main] c.e.project_1.service.AccountService     : Checking if username exists: existingUser
+2024-12-26T14:43:21.527-05:00 DEBUG 4600 --- [demo 2] [main] c.e.project_1.service.AccountService     : Username 'existingUser' exists: true
+2024-12-26T14:43:21.533-05:00  INFO 4600 --- [demo 2] [main] c.e.project_1.service.AccountService     : Attempting login for username: user1
+2024-12-26T14:43:21.534-05:00  WARN 4600 --- [demo 2] [main] c.e.project_1.service.AccountService     : Invalid password for username: user1
+2024-12-26T14:43:21.565-05:00  INFO 4600 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:43:21.572-05:00 DEBUG 4600 --- [demo 2] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@31ccc439, started on Thu Dec 26 14:43:17 EST 2024
+2024-12-26T14:43:21.577-05:00  INFO 4600 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:43:21.578-05:00  INFO 4600 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T14:43:21.848-05:00  INFO 4600 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T14:44:03.708-05:00  INFO 4712 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Starting TicketRepositoryTest using Java 23.0.1 with PID 4712 (started by davidahn in /Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend)
+2024-12-26T14:44:03.710-05:00 DEBUG 4712 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T14:44:03.711-05:00  INFO 4712 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T14:44:04.333-05:00  INFO 4712 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T14:44:04.452-05:00  INFO 4712 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 2 JPA repository interfaces.
+2024-12-26T14:44:04.563-05:00  INFO 4712 --- [demo 2] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-12-26T14:44:04.884-05:00  INFO 4712 --- [demo 2] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:45f31f0e-74b7-4d5a-befb-28c7829351fd;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-12-26T14:44:05.764-05:00  INFO 4712 --- [demo 2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T14:44:05.891-05:00  INFO 4712 --- [demo 2] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T14:44:05.981-05:00  INFO 4712 --- [demo 2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T14:44:06.793-05:00  INFO 4712 --- [demo 2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T14:44:06.904-05:00  WARN 4712 --- [demo 2] [main] org.hibernate.dialect.Dialect            : HHH000511: The 2.3.232 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-12-26T14:44:06.915-05:00  WARN 4712 --- [demo 2] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T14:44:06.962-05:00  INFO 4712 --- [demo 2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@1926a40f']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T14:44:08.745-05:00  INFO 4712 --- [demo 2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T14:44:08.896-05:00  INFO 4712 --- [demo 2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:44:09.601-05:00  INFO 4712 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Started TicketRepositoryTest in 6.645 seconds (process running for 8.758)
+2024-12-26T14:44:11.001-05:00  INFO 4712 --- [demo 2] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.project_1.repository.AccountRepositoryTest]: AccountRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-26T14:44:11.020-05:00  INFO 4712 --- [demo 2] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.project_1.MainApplication for test class com.example.project_1.repository.AccountRepositoryTest
+2024-12-26T14:44:11.116-05:00  INFO 4712 --- [demo 2] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.project_1.MainApplicationTests]: MainApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-26T14:44:11.134-05:00  INFO 4712 --- [demo 2] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.project_1.MainApplication for test class com.example.project_1.MainApplicationTests
+2024-12-26T14:44:11.158-05:00  INFO 4712 --- [demo 2] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-12-26T14:44:11.207-05:00  INFO 4712 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Starting MainApplicationTests using Java 23.0.1 with PID 4712 (started by davidahn in /Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend)
+2024-12-26T14:44:11.208-05:00 DEBUG 4712 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T14:44:11.208-05:00  INFO 4712 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T14:44:11.210-05:00 DEBUG 4712 --- [demo 2] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@31ccc439
+2024-12-26T14:44:11.693-05:00  INFO 4712 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T14:44:11.706-05:00  INFO 4712 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2024-12-26T14:44:12.016-05:00  INFO 4712 --- [demo 2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T14:44:12.018-05:00  INFO 4712 --- [demo 2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T14:44:12.030-05:00  INFO 4712 --- [demo 2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T14:44:12.033-05:00  INFO 4712 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T14:44:12.959-05:00  INFO 4712 --- [demo 2] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@73a09825
+2024-12-26T14:44:12.962-05:00  INFO 4712 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T14:44:13.017-05:00  WARN 4712 --- [demo 2] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T14:44:13.077-05:00  INFO 4712 --- [demo 2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T14:44:13.176-05:00  INFO 4712 --- [demo 2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T14:44:13.328-05:00  INFO 4712 --- [demo 2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:44:13.685-05:00  WARN 4712 --- [demo 2] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T14:44:13.832-05:00 DEBUG 4712 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2024-12-26T14:44:14.039-05:00 DEBUG 4712 --- [demo 2] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T14:44:14.092-05:00 DEBUG 4712 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T14:44:14.184-05:00 DEBUG 4712 --- [demo 2] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T14:44:14.318-05:00  INFO 4712 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Started MainApplicationTests in 3.16 seconds (process running for 13.474)
+2024-12-26T14:44:15.386-05:00  INFO 4712 --- [demo 2] [main] c.e.project_1.service.AccountService     : Creating a new account for username: newUser
+2024-12-26T14:44:15.386-05:00  INFO 4712 --- [demo 2] [main] c.e.project_1.service.AccountService     : Account created successfully: Account{accountId=1, username='newUser', password='newPass', role=EMPLOYEE}
+2024-12-26T14:44:15.390-05:00  INFO 4712 --- [demo 2] [main] c.e.project_1.service.AccountService     : Attempting login for username: user1
+2024-12-26T14:44:15.391-05:00  INFO 4712 --- [demo 2] [main] c.e.project_1.service.AccountService     : Login successful for username: user1
+2024-12-26T14:44:15.395-05:00  INFO 4712 --- [demo 2] [main] c.e.project_1.service.AccountService     : Attempting login for username: nonexistentUser
+2024-12-26T14:44:15.396-05:00  WARN 4712 --- [demo 2] [main] c.e.project_1.service.AccountService     : Username not found: nonexistentUser
+2024-12-26T14:44:15.401-05:00  INFO 4712 --- [demo 2] [main] c.e.project_1.service.AccountService     : Fetching all accounts...
+2024-12-26T14:44:15.402-05:00 DEBUG 4712 --- [demo 2] [main] c.e.project_1.service.AccountService     : Fetched accounts: [Account{accountId=1, username='user1', password='pass1', role=EMPLOYEE}, Account{accountId=2, username='user2', password='pass2', role=MANAGER}]
+2024-12-26T14:44:15.407-05:00  INFO 4712 --- [demo 2] [main] c.e.project_1.service.AccountService     : Checking if username exists: existingUser
+2024-12-26T14:44:15.408-05:00 DEBUG 4712 --- [demo 2] [main] c.e.project_1.service.AccountService     : Username 'existingUser' exists: true
+2024-12-26T14:44:15.414-05:00  INFO 4712 --- [demo 2] [main] c.e.project_1.service.AccountService     : Attempting login for username: user1
+2024-12-26T14:44:15.415-05:00  WARN 4712 --- [demo 2] [main] c.e.project_1.service.AccountService     : Invalid password for username: user1
+2024-12-26T14:44:15.437-05:00  INFO 4712 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:44:15.443-05:00 DEBUG 4712 --- [demo 2] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@31ccc439, started on Thu Dec 26 14:44:11 EST 2024
+2024-12-26T14:44:15.448-05:00  INFO 4712 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:44:15.449-05:00  INFO 4712 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T14:44:15.713-05:00  INFO 4712 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T15:07:41.286-05:00  INFO 5457 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Starting TicketRepositoryTest using Java 23.0.1 with PID 5457 (started by davidahn in /Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend)
+2024-12-26T15:07:41.288-05:00 DEBUG 5457 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T15:07:41.289-05:00  INFO 5457 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T15:07:41.818-05:00  INFO 5457 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T15:07:41.908-05:00  INFO 5457 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces.
+2024-12-26T15:07:42.002-05:00  INFO 5457 --- [demo 2] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-12-26T15:07:42.244-05:00  INFO 5457 --- [demo 2] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:bf0e0a4b-edea-487f-9878-3bb5a2a88aa4;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-12-26T15:07:42.851-05:00  INFO 5457 --- [demo 2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T15:07:42.984-05:00  INFO 5457 --- [demo 2] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T15:07:43.058-05:00  INFO 5457 --- [demo 2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T15:07:43.606-05:00  INFO 5457 --- [demo 2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T15:07:43.711-05:00  WARN 5457 --- [demo 2] [main] org.hibernate.dialect.Dialect            : HHH000511: The 2.3.232 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-12-26T15:07:43.723-05:00  WARN 5457 --- [demo 2] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T15:07:43.760-05:00  INFO 5457 --- [demo 2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@1926a40f']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T15:07:45.258-05:00  INFO 5457 --- [demo 2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T15:07:45.375-05:00  INFO 5457 --- [demo 2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T15:07:45.929-05:00  INFO 5457 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Started TicketRepositoryTest in 5.339 seconds (process running for 7.281)
+2024-12-26T15:07:47.012-05:00  INFO 5457 --- [demo 2] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.project_1.repository.AccountRepositoryTest]: AccountRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-26T15:07:47.035-05:00  INFO 5457 --- [demo 2] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.project_1.MainApplication for test class com.example.project_1.repository.AccountRepositoryTest
+2024-12-26T15:07:47.098-05:00  INFO 5457 --- [demo 2] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.project_1.MainApplicationTests]: MainApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-26T15:07:47.109-05:00  INFO 5457 --- [demo 2] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.project_1.MainApplication for test class com.example.project_1.MainApplicationTests
+2024-12-26T15:07:47.127-05:00  INFO 5457 --- [demo 2] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-12-26T15:07:47.164-05:00  INFO 5457 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Starting MainApplicationTests using Java 23.0.1 with PID 5457 (started by davidahn in /Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend)
+2024-12-26T15:07:47.164-05:00 DEBUG 5457 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T15:07:47.164-05:00  INFO 5457 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T15:07:47.167-05:00 DEBUG 5457 --- [demo 2] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@31ccc439
+2024-12-26T15:07:47.579-05:00  INFO 5457 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T15:07:47.590-05:00  INFO 5457 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2024-12-26T15:07:47.829-05:00  INFO 5457 --- [demo 2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T15:07:47.830-05:00  INFO 5457 --- [demo 2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T15:07:47.839-05:00  INFO 5457 --- [demo 2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T15:07:47.841-05:00  INFO 5457 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T15:07:48.700-05:00  INFO 5457 --- [demo 2] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@73a09825
+2024-12-26T15:07:48.703-05:00  INFO 5457 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T15:07:48.752-05:00  WARN 5457 --- [demo 2] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T15:07:48.808-05:00  INFO 5457 --- [demo 2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T15:07:48.876-05:00  INFO 5457 --- [demo 2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T15:07:49.023-05:00  INFO 5457 --- [demo 2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T15:07:49.324-05:00  WARN 5457 --- [demo 2] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T15:07:49.443-05:00 DEBUG 5457 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2024-12-26T15:07:49.606-05:00 DEBUG 5457 --- [demo 2] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T15:07:49.658-05:00 DEBUG 5457 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T15:07:49.735-05:00 DEBUG 5457 --- [demo 2] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T15:07:49.814-05:00  INFO 5457 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Started MainApplicationTests in 2.688 seconds (process running for 11.166)
+2024-12-26T15:07:50.570-05:00  INFO 5457 --- [demo 2] [main] c.e.project_1.service.AccountService     : Creating a new account for username: newUser
+2024-12-26T15:07:50.571-05:00  INFO 5457 --- [demo 2] [main] c.e.project_1.service.AccountService     : Account created successfully: Account{accountId=1, username='newUser', password='newPass', role=EMPLOYEE}
+2024-12-26T15:07:50.575-05:00  INFO 5457 --- [demo 2] [main] c.e.project_1.service.AccountService     : Attempting login for username: user1
+2024-12-26T15:07:50.575-05:00  INFO 5457 --- [demo 2] [main] c.e.project_1.service.AccountService     : Login successful for username: user1
+2024-12-26T15:07:50.579-05:00  INFO 5457 --- [demo 2] [main] c.e.project_1.service.AccountService     : Attempting login for username: nonexistentUser
+2024-12-26T15:07:50.579-05:00  WARN 5457 --- [demo 2] [main] c.e.project_1.service.AccountService     : Username not found: nonexistentUser
+2024-12-26T15:07:50.582-05:00  INFO 5457 --- [demo 2] [main] c.e.project_1.service.AccountService     : Fetching all accounts...
+2024-12-26T15:07:50.583-05:00 DEBUG 5457 --- [demo 2] [main] c.e.project_1.service.AccountService     : Fetched accounts: [Account{accountId=1, username='user1', password='pass1', role=EMPLOYEE}, Account{accountId=2, username='user2', password='pass2', role=MANAGER}]
+2024-12-26T15:07:50.586-05:00  INFO 5457 --- [demo 2] [main] c.e.project_1.service.AccountService     : Checking if username exists: existingUser
+2024-12-26T15:07:50.587-05:00 DEBUG 5457 --- [demo 2] [main] c.e.project_1.service.AccountService     : Username 'existingUser' exists: true
+2024-12-26T15:07:50.590-05:00  INFO 5457 --- [demo 2] [main] c.e.project_1.service.AccountService     : Attempting login for username: user1
+2024-12-26T15:07:50.590-05:00  WARN 5457 --- [demo 2] [main] c.e.project_1.service.AccountService     : Invalid password for username: user1
+2024-12-26T15:07:50.611-05:00  INFO 5457 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T15:07:50.616-05:00 DEBUG 5457 --- [demo 2] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@31ccc439, started on Thu Dec 26 15:07:47 EST 2024
+2024-12-26T15:07:50.619-05:00  INFO 5457 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T15:07:50.620-05:00  INFO 5457 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T15:07:50.865-05:00  INFO 5457 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T15:14:16.657-05:00  INFO 5658 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Starting TicketRepositoryTest using Java 23.0.1 with PID 5658 (started by davidahn in /Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend)
+2024-12-26T15:14:16.660-05:00 DEBUG 5658 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T15:14:16.660-05:00  INFO 5658 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T15:14:17.228-05:00  INFO 5658 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T15:14:17.330-05:00  INFO 5658 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2024-12-26T15:14:17.426-05:00  INFO 5658 --- [demo 2] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-12-26T15:14:17.674-05:00  INFO 5658 --- [demo 2] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:f0133e2d-225f-4eca-a0a6-668f85b2bf6d;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-12-26T15:14:18.328-05:00  INFO 5658 --- [demo 2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T15:14:18.469-05:00  INFO 5658 --- [demo 2] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T15:14:18.542-05:00  INFO 5658 --- [demo 2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T15:14:19.193-05:00  INFO 5658 --- [demo 2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T15:14:19.313-05:00  WARN 5658 --- [demo 2] [main] org.hibernate.dialect.Dialect            : HHH000511: The 2.3.232 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-12-26T15:14:19.326-05:00  WARN 5658 --- [demo 2] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T15:14:19.370-05:00  INFO 5658 --- [demo 2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@1926a40f']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T15:14:20.892-05:00  INFO 5658 --- [demo 2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T15:14:21.009-05:00  INFO 5658 --- [demo 2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T15:14:21.602-05:00  INFO 5658 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Started TicketRepositoryTest in 5.69 seconds (process running for 7.71)
+2024-12-26T15:14:22.754-05:00  INFO 5658 --- [demo 2] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.project_1.repository.AccountRepositoryTest]: AccountRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-26T15:14:22.770-05:00  INFO 5658 --- [demo 2] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.project_1.MainApplication for test class com.example.project_1.repository.AccountRepositoryTest
+2024-12-26T15:14:22.841-05:00  INFO 5658 --- [demo 2] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.project_1.MainApplicationTests]: MainApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-26T15:14:22.854-05:00  INFO 5658 --- [demo 2] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.project_1.MainApplication for test class com.example.project_1.MainApplicationTests
+2024-12-26T15:14:22.877-05:00  INFO 5658 --- [demo 2] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-12-26T15:14:22.916-05:00  INFO 5658 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Starting MainApplicationTests using Java 23.0.1 with PID 5658 (started by davidahn in /Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend)
+2024-12-26T15:14:22.917-05:00 DEBUG 5658 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T15:14:22.917-05:00  INFO 5658 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T15:14:22.920-05:00 DEBUG 5658 --- [demo 2] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@31ccc439
+2024-12-26T15:14:23.417-05:00  INFO 5658 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T15:14:23.428-05:00  INFO 5658 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2024-12-26T15:14:23.654-05:00  INFO 5658 --- [demo 2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T15:14:23.656-05:00  INFO 5658 --- [demo 2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T15:14:23.664-05:00  INFO 5658 --- [demo 2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T15:14:23.666-05:00  INFO 5658 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T15:14:24.582-05:00  INFO 5658 --- [demo 2] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@73a09825
+2024-12-26T15:14:24.586-05:00  INFO 5658 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T15:14:24.634-05:00  WARN 5658 --- [demo 2] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T15:14:24.696-05:00  INFO 5658 --- [demo 2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T15:14:24.807-05:00  INFO 5658 --- [demo 2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T15:14:24.970-05:00  INFO 5658 --- [demo 2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T15:14:25.251-05:00  WARN 5658 --- [demo 2] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T15:14:25.377-05:00 DEBUG 5658 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2024-12-26T15:14:25.568-05:00 DEBUG 5658 --- [demo 2] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T15:14:25.619-05:00 DEBUG 5658 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T15:14:25.703-05:00 DEBUG 5658 --- [demo 2] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T15:14:25.789-05:00  INFO 5658 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Started MainApplicationTests in 2.913 seconds (process running for 11.897)
+2024-12-26T15:14:26.646-05:00  INFO 5658 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T15:14:26.650-05:00 DEBUG 5658 --- [demo 2] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@31ccc439, started on Thu Dec 26 15:14:22 EST 2024
+2024-12-26T15:14:26.653-05:00  INFO 5658 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T15:14:26.654-05:00  INFO 5658 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T15:14:26.932-05:00  INFO 5658 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T15:16:27.972-05:00  INFO 5897 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : Starting MainApplication using Java 23.0.1 with PID 5897 (/Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend/target/classes started by davidahn in /Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend)
+2024-12-26T15:16:27.975-05:00 DEBUG 5897 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T15:16:27.976-05:00  INFO 5897 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T15:16:28.042-05:00  INFO 5897 --- [demo 2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-26T15:16:28.043-05:00  INFO 5897 --- [demo 2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-26T15:16:28.737-05:00  INFO 5897 --- [demo 2] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T15:16:28.814-05:00  INFO 5897 --- [demo 2] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2024-12-26T15:16:29.418-05:00  INFO 5897 --- [demo 2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T15:16:29.441-05:00  INFO 5897 --- [demo 2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T15:16:29.441-05:00  INFO 5897 --- [demo 2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-26T15:16:29.484-05:00  INFO 5897 --- [demo 2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T15:16:29.484-05:00  INFO 5897 --- [demo 2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1441 ms
+2024-12-26T15:16:29.529-05:00  INFO 5897 --- [demo 2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T15:16:30.213-05:00  INFO 5897 --- [demo 2] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d07b876
+2024-12-26T15:16:30.216-05:00  INFO 5897 --- [demo 2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T15:16:30.235-05:00  INFO 5897 --- [demo 2] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://database-1.cneoguq8celc.us-east-2.rds.amazonaws.com:5432/postgres'
+2024-12-26T15:16:30.295-05:00 DEBUG 5897 --- [demo 2] [restartedMain] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-12-26T15:16:30.404-05:00  INFO 5897 --- [demo 2] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T15:16:30.492-05:00  INFO 5897 --- [demo 2] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T15:16:30.531-05:00  INFO 5897 --- [demo 2] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T15:16:30.828-05:00  INFO 5897 --- [demo 2] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T15:16:30.955-05:00  WARN 5897 --- [demo 2] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T15:16:31.031-05:00  INFO 5897 --- [demo 2] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T15:16:31.905-05:00  INFO 5897 --- [demo 2] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T15:16:32.100-05:00  INFO 5897 --- [demo 2] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T15:16:32.498-05:00  WARN 5897 --- [demo 2] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T15:16:32.597-05:00 DEBUG 5897 --- [demo 2] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2024-12-26T15:16:32.675-05:00 DEBUG 5897 --- [demo 2] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T15:16:32.708-05:00 DEBUG 5897 --- [demo 2] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T15:16:32.762-05:00 DEBUG 5897 --- [demo 2] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T15:16:32.849-05:00  INFO 5897 --- [demo 2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-26T15:16:32.886-05:00  INFO 5897 --- [demo 2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T15:16:32.893-05:00  INFO 5897 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : Started MainApplication in 5.51 seconds (process running for 6.065)
+2024-12-26T15:16:37.393-05:00  INFO 5897 --- [demo 2] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T15:16:37.393-05:00  INFO 5897 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T15:16:37.394-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-26T15:16:37.394-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-26T15:16:37.394-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-26T15:16:37.395-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@56f08a28
+2024-12-26T15:16:37.395-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3a11fe64
+2024-12-26T15:16:37.396-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-26T15:16:37.396-05:00  INFO 5897 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-12-26T15:16:37.437-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/accounts/login", parameters={}
+2024-12-26T15:16:37.452-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.AccountController#loginAccount(Account)
+2024-12-26T15:16:37.532-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Account{accountId=null, username='john_doe', password='password123', role=EMPLOYEE}]
+2024-12-26T15:16:37.769-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:16:37.770-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Account{accountId=1, username='john_doe', password='password123', role=EMPLOYEE}]
+2024-12-26T15:16:37.781-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:16:37.876-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/tickets/user/1", parameters={}
+2024-12-26T15:16:37.877-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getTicketsByUserId(Integer)
+2024-12-26T15:16:37.940-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:16:37.941-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Ticket{ticketId=7, userId=1, amount=12.0, description='christmas gift', status='PENDING', submissio (truncated)...]
+2024-12-26T15:16:37.954-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:16:37.960-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/tickets/user/1", parameters={}
+2024-12-26T15:16:37.961-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getTicketsByUserId(Integer)
+2024-12-26T15:16:37.995-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:16:37.996-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Ticket{ticketId=7, userId=1, amount=12.0, description='christmas gift', status='PENDING', submissio (truncated)...]
+2024-12-26T15:16:37.999-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:16:53.854-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/tickets", parameters={}
+2024-12-26T15:16:53.856-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#createTicket(Ticket)
+2024-12-26T15:16:53.862-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Ticket{ticketId=null, userId=1, amount=13.0, description='dfdfdfd', status='PENDING', submissionDate (truncated)...]
+2024-12-26T15:16:54.006-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:16:54.007-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Ticket{ticketId=23, userId=1, amount=13.0, description='dfdfdfd', status='PENDING', submissionDate=2 (truncated)...]
+2024-12-26T15:16:54.008-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:17:06.149-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/tickets/user/1", parameters={}
+2024-12-26T15:17:06.151-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getTicketsByUserId(Integer)
+2024-12-26T15:17:06.220-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:17:06.221-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Ticket{ticketId=7, userId=1, amount=12.0, description='christmas gift', status='PENDING', submissio (truncated)...]
+2024-12-26T15:17:06.223-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:17:06.229-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/tickets/user/1", parameters={}
+2024-12-26T15:17:06.230-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getTicketsByUserId(Integer)
+2024-12-26T15:17:06.265-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:17:06.266-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Ticket{ticketId=7, userId=1, amount=12.0, description='christmas gift', status='PENDING', submissio (truncated)...]
+2024-12-26T15:17:06.268-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:18:31.498-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/accounts/login", parameters={}
+2024-12-26T15:18:31.499-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.AccountController#loginAccount(Account)
+2024-12-26T15:18:31.500-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Account{accountId=null, username='jane_doe', password='password456', role=EMPLOYEE}]
+2024-12-26T15:18:31.555-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:18:31.555-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Account{accountId=2, username='jane_doe', password='password456', role=MANAGER}]
+2024-12-26T15:18:31.556-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:18:31.640-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/tickets", parameters={}
+2024-12-26T15:18:31.642-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getAllTickets()
+2024-12-26T15:18:31.748-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:18:31.748-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Ticket{ticketId=2, userId=2, amount=250.0, description='Office supplies reimbursement', status='APP (truncated)...]
+2024-12-26T15:18:31.750-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:18:31.751-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/tickets", parameters={}
+2024-12-26T15:18:31.752-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getAllTickets()
+2024-12-26T15:18:31.813-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:18:31.814-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Ticket{ticketId=2, userId=2, amount=250.0, description='Office supplies reimbursement', status='APP (truncated)...]
+2024-12-26T15:18:31.816-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:18:37.420-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : PUT "/tickets/18", parameters={}
+2024-12-26T15:18:37.421-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#updateTicket(Integer, Ticket)
+2024-12-26T15:18:37.423-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Ticket{ticketId=null, userId=null, amount=null, description='null', status='DENIED', submissionDate= (truncated)...]
+2024-12-26T15:18:37.588-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:18:37.588-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Ticket{ticketId=18, userId=1, amount=13.0, description='adsfdfd', status='DENIED', submissionDate=20 (truncated)...]
+2024-12-26T15:18:37.589-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:18:40.472-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : PUT "/tickets/21", parameters={}
+2024-12-26T15:18:40.473-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#updateTicket(Integer, Ticket)
+2024-12-26T15:18:40.475-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Ticket{ticketId=null, userId=null, amount=null, description='null', status='APPROVED', submissionDat (truncated)...]
+2024-12-26T15:18:40.617-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:18:40.617-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Ticket{ticketId=21, userId=1, amount=0.0, description='slepp', status='APPROVED', submissionDate=202 (truncated)...]
+2024-12-26T15:18:40.618-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:21:06.787-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/accounts/register", parameters={}
+2024-12-26T15:21:06.788-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.AccountController#registerAccount(Account)
+2024-12-26T15:21:06.789-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Account{accountId=null, username='useless_account', password='HomieHomie12!', role=EMPLOYEE}]
+2024-12-26T15:21:06.899-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:21:06.901-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Account{accountId=15, username='useless_account', password='HomieHomie12!', role=EMPLOYEE}]
+2024-12-26T15:21:06.903-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:21:27.386-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/accounts/login", parameters={}
+2024-12-26T15:21:27.386-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.AccountController#loginAccount(Account)
+2024-12-26T15:21:27.387-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Account{accountId=null, username='useless_account', password='HomieHomie12!', role=EMPLOYEE}]
+2024-12-26T15:21:27.440-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:21:27.441-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Account{accountId=15, username='useless_account', password='HomieHomie12!', role=EMPLOYEE}]
+2024-12-26T15:21:27.442-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:21:27.546-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/tickets/user/15", parameters={}
+2024-12-26T15:21:27.547-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getTicketsByUserId(Integer)
+2024-12-26T15:21:27.580-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:21:27.581-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2024-12-26T15:21:27.581-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 204 NO_CONTENT
+2024-12-26T15:21:27.615-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/tickets/user/15", parameters={}
+2024-12-26T15:21:27.616-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getTicketsByUserId(Integer)
+2024-12-26T15:21:27.664-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:21:27.664-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2024-12-26T15:21:27.665-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 204 NO_CONTENT
+2024-12-26T15:21:38.852-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/tickets", parameters={}
+2024-12-26T15:21:38.853-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#createTicket(Ticket)
+2024-12-26T15:21:38.855-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Ticket{ticketId=null, userId=15, amount=1.0, description='new', status='PENDING', submissionDate=202 (truncated)...]
+2024-12-26T15:21:38.937-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:21:38.938-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Ticket{ticketId=24, userId=15, amount=1.0, description='new', status='PENDING', submissionDate=2024- (truncated)...]
+2024-12-26T15:21:38.939-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:21:43.061-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/tickets/user/15", parameters={}
+2024-12-26T15:21:43.062-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getTicketsByUserId(Integer)
+2024-12-26T15:21:43.155-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:21:43.156-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Ticket{ticketId=24, userId=15, amount=1.0, description='new', status='PENDING', submissionDate=2024 (truncated)...]
+2024-12-26T15:21:43.157-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:21:43.160-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/tickets/user/15", parameters={}
+2024-12-26T15:21:43.160-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getTicketsByUserId(Integer)
+2024-12-26T15:21:43.196-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:21:43.196-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Ticket{ticketId=24, userId=15, amount=1.0, description='new', status='PENDING', submissionDate=2024 (truncated)...]
+2024-12-26T15:21:43.197-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:48:31.047-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/accounts/login", parameters={}
+2024-12-26T15:48:31.052-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.AccountController#loginAccount(Account)
+2024-12-26T15:48:31.061-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Account{accountId=null, username='john_doe', password='password123', role=EMPLOYEE}]
+2024-12-26T15:48:31.144-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:48:31.145-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Account{accountId=1, username='john_doe', password='password123', role=EMPLOYEE}]
+2024-12-26T15:48:31.148-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:48:31.235-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/tickets/user/1", parameters={}
+2024-12-26T15:48:31.243-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getTicketsByUserId(Integer)
+2024-12-26T15:48:31.340-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:48:31.349-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Ticket{ticketId=7, userId=1, amount=12.0, description='christmas gift', status='PENDING', submissio (truncated)...]
+2024-12-26T15:48:31.357-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:48:31.369-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/tickets/user/1", parameters={}
+2024-12-26T15:48:31.372-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getTicketsByUserId(Integer)
+2024-12-26T15:48:31.412-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T15:48:31.412-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Ticket{ticketId=7, userId=1, amount=12.0, description='christmas gift', status='PENDING', submissio (truncated)...]
+2024-12-26T15:48:31.415-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

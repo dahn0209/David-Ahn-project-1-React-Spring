@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { LoginResponse } from '../types/Auth';
-import styles from '../styles/AuthContext.module.css'; // Import the CSS module
+import styles from '../styles/AuthContext.module.css';
 
 interface AuthState {
   userId: number | null;
@@ -51,7 +51,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       role: user.role,
       isAuthenticated: true,
     });
-    localStorage.setItem('auth', JSON.stringify(userData)); // Persist user data in localStorage
+    localStorage.setItem('auth', JSON.stringify(userData)); 
   };
 
   const logout = () => {
@@ -61,7 +61,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       role: null,
       isAuthenticated: false,
     });
-    localStorage.removeItem('auth'); // Clear localStorage on logout
+    localStorage.removeItem('auth'); 
   };
 
   return (

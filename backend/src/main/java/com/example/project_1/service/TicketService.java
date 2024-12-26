@@ -61,17 +61,6 @@ public class TicketService {
      * @return The updated ticket.
      * @throws RuntimeException if the ticket is not found.
      */
-    // public Ticket updateTicket(Integer ticketId, Ticket updatedTicket) {
-    //     return ticketRepository.findById(ticketId).map(existingTicket -> {
-    //         existingTicket.setUserId(updatedTicket.getUserId());
-    //         existingTicket.setAmount(updatedTicket.getAmount());
-    //         existingTicket.setDescription(updatedTicket.getDescription());
-    //         existingTicket.setStatus(updatedTicket.getStatus());
-    //         existingTicket.setSubmissionDate(updatedTicket.getSubmissionDate());
-    //         return ticketRepository.save(existingTicket);
-    //     }).orElseThrow(() -> new RuntimeException("Ticket not found with ID: " + ticketId));
-    // }
-
     public Ticket updateTicket(Integer ticketId, Ticket updatedTicket) {
         return ticketRepository.findById(ticketId).map(existingTicket -> {
             if (updatedTicket.getStatus() != null) {

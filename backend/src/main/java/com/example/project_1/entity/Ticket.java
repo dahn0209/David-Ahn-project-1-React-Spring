@@ -2,7 +2,6 @@
 package com.example.project_1.entity;
 
 import jakarta.persistence.*;
-// import jakarta.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 import java.util.Objects;
 

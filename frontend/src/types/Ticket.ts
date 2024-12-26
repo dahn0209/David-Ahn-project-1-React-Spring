@@ -6,5 +6,5 @@ export interface Ticket {
   amount: number;
   description: string;
   status: TicketStatus;
-  submissionDate: string; // ISO 8601 formatted date
+  submissionDate: string; 
 }
