@@ -1,0 +1,367 @@
+2024-12-26T02:47:40.004-05:00  INFO 46832 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Starting MainApplicationTests using Java 23.0.1 with PID 46832 (started by davidahn in /Users/davidahn/revature_training/David_Ahn_ERS_React_Spring_Project_1/backend)
+2024-12-26T02:47:40.006-05:00 DEBUG 46832 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T02:47:40.007-05:00  INFO 46832 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T02:47:40.108-05:00 DEBUG 46832 --- [demo 2] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2415e4c7
+2024-12-26T02:47:41.168-05:00  INFO 46832 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T02:47:41.279-05:00  INFO 46832 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 2 JPA repository interfaces.
+2024-12-26T02:47:41.974-05:00  INFO 46832 --- [demo 2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T02:47:42.103-05:00  INFO 46832 --- [demo 2] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T02:47:42.171-05:00  INFO 46832 --- [demo 2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T02:47:42.675-05:00  INFO 46832 --- [demo 2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T02:47:42.732-05:00  INFO 46832 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T02:47:43.627-05:00  INFO 46832 --- [demo 2] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ec9780b
+2024-12-26T02:47:43.631-05:00  INFO 46832 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T02:47:43.747-05:00  WARN 46832 --- [demo 2] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T02:47:43.848-05:00  INFO 46832 --- [demo 2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T02:47:45.271-05:00  INFO 46832 --- [demo 2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T02:47:45.497-05:00  INFO 46832 --- [demo 2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T02:47:46.205-05:00  WARN 46832 --- [demo 2] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T02:47:46.326-05:00 DEBUG 46832 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2024-12-26T02:47:46.493-05:00 DEBUG 46832 --- [demo 2] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T02:47:46.539-05:00 DEBUG 46832 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T02:47:46.625-05:00 DEBUG 46832 --- [demo 2] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T02:47:46.767-05:00  INFO 46832 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Started MainApplicationTests in 7.347 seconds (process running for 9.201)
+2024-12-26T02:47:47.522-05:00 DEBUG 46832 --- [demo 2] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@2415e4c7, started on Thu Dec 26 02:47:40 EST 2024
+2024-12-26T02:47:47.525-05:00  INFO 46832 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T02:47:47.528-05:00  INFO 46832 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T02:47:47.804-05:00  INFO 46832 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T02:48:23.406-05:00  INFO 46929 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Starting MainApplicationTests using Java 23.0.1 with PID 46929 (started by davidahn in /Users/davidahn/revature_training/David_Ahn_ERS_React_Spring_Project_1/backend)
+2024-12-26T02:48:23.408-05:00 DEBUG 46929 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T02:48:23.408-05:00  INFO 46929 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T02:48:23.502-05:00 DEBUG 46929 --- [demo 2] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6b63abdc
+2024-12-26T02:48:24.639-05:00  INFO 46929 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T02:48:24.719-05:00  INFO 46929 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2024-12-26T02:48:25.328-05:00  INFO 46929 --- [demo 2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T02:48:25.422-05:00  INFO 46929 --- [demo 2] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T02:48:25.486-05:00  INFO 46929 --- [demo 2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T02:48:25.909-05:00  INFO 46929 --- [demo 2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T02:48:25.968-05:00  INFO 46929 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T02:48:26.847-05:00  INFO 46929 --- [demo 2] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1afd9827
+2024-12-26T02:48:26.850-05:00  INFO 46929 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T02:48:26.959-05:00  WARN 46929 --- [demo 2] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T02:48:27.041-05:00  INFO 46929 --- [demo 2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T02:48:28.275-05:00  INFO 46929 --- [demo 2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T02:48:28.494-05:00  INFO 46929 --- [demo 2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T02:48:29.274-05:00  WARN 46929 --- [demo 2] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T02:48:29.390-05:00 DEBUG 46929 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2024-12-26T02:48:29.615-05:00 DEBUG 46929 --- [demo 2] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T02:48:29.677-05:00 DEBUG 46929 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T02:48:29.881-05:00 DEBUG 46929 --- [demo 2] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T02:48:30.084-05:00  INFO 46929 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Started MainApplicationTests in 7.137 seconds (process running for 8.755)
+2024-12-26T02:48:30.864-05:00 DEBUG 46929 --- [demo 2] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6b63abdc, started on Thu Dec 26 02:48:23 EST 2024
+2024-12-26T02:48:31.163-05:00  INFO 46929 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T02:48:31.166-05:00  INFO 46929 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T02:48:31.441-05:00  INFO 46929 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T02:49:12.012-05:00  INFO 47092 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : Starting MainApplication using Java 23.0.1 with PID 47092 (/Users/davidahn/revature_training/David_Ahn_ERS_React_Spring_Project_1/backend/target/classes started by davidahn in /Users/davidahn/revature_training/David_Ahn_ERS_React_Spring_Project_1/backend)
+2024-12-26T02:49:12.013-05:00 DEBUG 47092 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T02:49:12.014-05:00  INFO 47092 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T02:49:12.065-05:00  INFO 47092 --- [demo 2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-26T02:49:12.065-05:00  INFO 47092 --- [demo 2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-26T02:49:12.537-05:00  INFO 47092 --- [demo 2] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T02:49:12.599-05:00  INFO 47092 --- [demo 2] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2024-12-26T02:49:13.068-05:00  INFO 47092 --- [demo 2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T02:49:13.083-05:00  INFO 47092 --- [demo 2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T02:49:13.083-05:00  INFO 47092 --- [demo 2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-26T02:49:13.122-05:00  INFO 47092 --- [demo 2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T02:49:13.123-05:00  INFO 47092 --- [demo 2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1058 ms
+2024-12-26T02:49:13.157-05:00  INFO 47092 --- [demo 2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T02:49:13.784-05:00  INFO 47092 --- [demo 2] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@25cfd6d6
+2024-12-26T02:49:13.787-05:00  INFO 47092 --- [demo 2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T02:49:13.804-05:00  INFO 47092 --- [demo 2] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://database-1.cneoguq8celc.us-east-2.rds.amazonaws.com:5432/postgres'
+2024-12-26T02:49:13.861-05:00 DEBUG 47092 --- [demo 2] [restartedMain] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-12-26T02:49:13.936-05:00  INFO 47092 --- [demo 2] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T02:49:13.983-05:00  INFO 47092 --- [demo 2] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T02:49:14.011-05:00  INFO 47092 --- [demo 2] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T02:49:14.222-05:00  INFO 47092 --- [demo 2] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T02:49:14.289-05:00  WARN 47092 --- [demo 2] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T02:49:14.354-05:00  INFO 47092 --- [demo 2] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T02:49:14.960-05:00  INFO 47092 --- [demo 2] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T02:49:15.162-05:00  INFO 47092 --- [demo 2] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T02:49:15.474-05:00  WARN 47092 --- [demo 2] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T02:49:15.559-05:00 DEBUG 47092 --- [demo 2] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2024-12-26T02:49:15.632-05:00 DEBUG 47092 --- [demo 2] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T02:49:15.661-05:00 DEBUG 47092 --- [demo 2] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T02:49:15.703-05:00 DEBUG 47092 --- [demo 2] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T02:49:15.791-05:00  INFO 47092 --- [demo 2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-26T02:49:15.827-05:00  INFO 47092 --- [demo 2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T02:49:15.837-05:00  INFO 47092 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : Started MainApplication in 4.175 seconds (process running for 4.518)
+2024-12-26T02:49:25.779-05:00  INFO 47092 --- [demo 2] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T02:49:25.779-05:00  INFO 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T02:49:25.780-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-26T02:49:25.780-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-26T02:49:25.780-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-26T02:49:25.781-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@32bcb986
+2024-12-26T02:49:25.782-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6ea06fec
+2024-12-26T02:49:25.782-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-26T02:49:25.782-05:00  INFO 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-12-26T02:49:25.791-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : PUT "/tickets/10/", parameters={}
+2024-12-26T02:49:25.799-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-26T02:49:25.809-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-12-26T02:49:25.816-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource tickets/10.]
+2024-12-26T02:49:25.818-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-12-26T02:49:25.824-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
+2024-12-26T02:49:25.826-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-26T02:49:25.852-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T02:49:25.854-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 26 02:49:25 EST 2024, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2024-12-26T02:49:25.890-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-12-26T02:49:28.016-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : PUT "/tickets/10", parameters={}
+2024-12-26T02:49:28.017-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#updateTicket(Integer, Ticket)
+2024-12-26T02:49:28.072-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Ticket{ticketId=10, userId=12, amount=10.0, description='sleep time', status='DENIED', submissionDat (truncated)...]
+2024-12-26T02:49:28.247-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T02:49:28.247-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Ticket{ticketId=10, userId=12, amount=10.0, description='sleep time', status='DENIED', submissionDat (truncated)...]
+2024-12-26T02:49:28.249-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T02:49:31.651-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : PUT "/tickets", parameters={}
+2024-12-26T02:49:31.652-05:00  WARN 47092 --- [demo 2] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+2024-12-26T02:49:31.653-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2024-12-26T02:49:31.653-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
+2024-12-26T02:49:31.653-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-26T02:49:31.654-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T02:49:31.654-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 26 02:49:31 EST 2024, status=405, error=Method Not Allowed, trace=org.springframe (truncated)...]
+2024-12-26T02:49:31.655-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2024-12-26T02:49:37.095-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : PUT "/accounts", parameters={}
+2024-12-26T02:49:37.097-05:00  WARN 47092 --- [demo 2] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+2024-12-26T02:49:37.098-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2024-12-26T02:49:37.098-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
+2024-12-26T02:49:37.099-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-26T02:49:37.099-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T02:49:37.100-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 26 02:49:37 EST 2024, status=405, error=Method Not Allowed, trace=org.springframe (truncated)...]
+2024-12-26T02:49:37.101-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2024-12-26T02:49:42.221-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : PUT "/accounts", parameters={}
+2024-12-26T02:49:42.222-05:00  WARN 47092 --- [demo 2] [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+2024-12-26T02:49:42.223-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2024-12-26T02:49:42.223-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
+2024-12-26T02:49:42.224-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-26T02:49:42.226-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T02:49:42.226-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 26 02:49:42 EST 2024, status=405, error=Method Not Allowed, trace=org.springframe (truncated)...]
+2024-12-26T02:49:42.228-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2024-12-26T02:49:44.826-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : PUT "/account", parameters={}
+2024-12-26T02:49:44.827-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-26T02:49:44.828-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-12-26T02:49:44.829-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource account.]
+2024-12-26T02:49:44.829-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-12-26T02:49:44.829-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
+2024-12-26T02:49:44.829-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-26T02:49:44.830-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T02:49:44.830-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 26 02:49:44 EST 2024, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2024-12-26T02:49:44.831-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-12-26T02:49:51.360-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/account", parameters={}
+2024-12-26T02:49:51.360-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-26T02:49:51.362-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-12-26T02:49:51.362-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource account.]
+2024-12-26T02:49:51.363-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-12-26T02:49:51.363-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-12-26T02:49:51.364-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-26T02:49:51.366-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T02:49:51.366-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 26 02:49:51 EST 2024, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2024-12-26T02:49:51.367-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-12-26T02:49:52.916-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/account", parameters={}
+2024-12-26T02:49:52.916-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-26T02:49:52.917-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-12-26T02:49:52.917-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource account.]
+2024-12-26T02:49:52.917-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-12-26T02:49:52.918-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-12-26T02:49:52.918-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-26T02:49:52.919-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T02:49:52.919-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 26 02:49:52 EST 2024, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2024-12-26T02:49:52.920-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-12-26T02:49:55.658-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/accounts", parameters={}
+2024-12-26T02:49:55.659-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.AccountController#getAllAccounts()
+2024-12-26T02:49:55.807-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T02:49:55.808-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Account{accountId=1, username='john_doe', password='password123', role=EMPLOYEE}, Account{accountId (truncated)...]
+2024-12-26T02:49:55.812-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T02:50:04.623-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/tickets", parameters={}
+2024-12-26T02:50:04.624-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getAllTickets()
+2024-12-26T02:50:04.714-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T02:50:04.715-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Ticket{ticketId=2, userId=2, amount=250.0, description='Office supplies reimbursement', status='APP (truncated)...]
+2024-12-26T02:50:04.719-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T02:50:55.187-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/tickets/1", parameters={}
+2024-12-26T02:50:55.188-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getTicketById(Integer)
+2024-12-26T02:50:55.273-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T02:50:55.274-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Ticket{ticketId=1, userId=1, amount=50.0, description='Travel reimbursement decreased', status='DENI (truncated)...]
+2024-12-26T02:50:55.276-05:00 DEBUG 47092 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T02:55:01.033-05:00  INFO 47092 --- [demo 2] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T02:55:01.046-05:00  INFO 47092 --- [demo 2] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T02:55:01.050-05:00  INFO 47092 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T02:55:01.053-05:00  INFO 47092 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T02:55:01.330-05:00  INFO 47092 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T11:02:47.516-05:00  INFO 8349 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : Starting MainApplication using Java 23.0.1 with PID 8349 (/Users/davidahn/revature_training/David_Ahn_ERS_React_Spring_Project_1/backend/target/classes started by davidahn in /Users/davidahn/revature_training/David_Ahn_ERS_React_Spring_Project_1/backend)
+2024-12-26T11:02:47.520-05:00 DEBUG 8349 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T11:02:47.524-05:00  INFO 8349 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T11:02:47.665-05:00  INFO 8349 --- [demo 2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-26T11:02:47.666-05:00  INFO 8349 --- [demo 2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-26T11:02:48.937-05:00  INFO 8349 --- [demo 2] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T11:02:49.063-05:00  INFO 8349 --- [demo 2] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 2 JPA repository interfaces.
+2024-12-26T11:02:50.097-05:00  INFO 8349 --- [demo 2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T11:02:50.129-05:00  INFO 8349 --- [demo 2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T11:02:50.130-05:00  INFO 8349 --- [demo 2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-26T11:02:50.203-05:00  INFO 8349 --- [demo 2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T11:02:50.204-05:00  INFO 8349 --- [demo 2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2537 ms
+2024-12-26T11:02:50.291-05:00  INFO 8349 --- [demo 2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T11:02:51.385-05:00  INFO 8349 --- [demo 2] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@10dc47a
+2024-12-26T11:02:51.389-05:00  INFO 8349 --- [demo 2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T11:02:51.409-05:00  INFO 8349 --- [demo 2] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://database-1.cneoguq8celc.us-east-2.rds.amazonaws.com:5432/postgres'
+2024-12-26T11:02:51.504-05:00 DEBUG 8349 --- [demo 2] [restartedMain] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-12-26T11:02:51.667-05:00  INFO 8349 --- [demo 2] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T11:02:51.811-05:00  INFO 8349 --- [demo 2] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T11:02:51.873-05:00  INFO 8349 --- [demo 2] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T11:02:52.403-05:00  INFO 8349 --- [demo 2] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T11:02:52.562-05:00  WARN 8349 --- [demo 2] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T11:02:52.636-05:00  INFO 8349 --- [demo 2] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T11:02:54.795-05:00  INFO 8349 --- [demo 2] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T11:02:55.009-05:00  INFO 8349 --- [demo 2] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T11:02:55.689-05:00  WARN 8349 --- [demo 2] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T11:02:55.859-05:00 DEBUG 8349 --- [demo 2] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2024-12-26T11:02:55.993-05:00 DEBUG 8349 --- [demo 2] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T11:02:56.049-05:00 DEBUG 8349 --- [demo 2] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T11:02:56.143-05:00 DEBUG 8349 --- [demo 2] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T11:02:56.288-05:00  INFO 8349 --- [demo 2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-26T11:02:56.345-05:00  INFO 8349 --- [demo 2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T11:02:56.359-05:00  INFO 8349 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : Started MainApplication in 10.001 seconds (process running for 11.006)
+2024-12-26T11:08:36.738-05:00  INFO 8349 --- [demo 2] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T11:08:36.739-05:00  INFO 8349 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T11:08:36.739-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-26T11:08:36.740-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-26T11:08:36.740-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-26T11:08:36.741-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5b6e3b93
+2024-12-26T11:08:36.743-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6b35d21c
+2024-12-26T11:08:36.744-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-26T11:08:36.744-05:00  INFO 8349 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-12-26T11:08:36.763-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/tickets/1", parameters={}
+2024-12-26T11:08:36.781-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getTicketById(Integer)
+2024-12-26T11:08:37.109-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T11:08:37.112-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Ticket{ticketId=1, userId=1, amount=50.0, description='Travel reimbursement decreased', status='DENI (truncated)...]
+2024-12-26T11:08:37.135-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T11:08:46.069-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/tickets", parameters={}
+2024-12-26T11:08:46.069-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getAllTickets()
+2024-12-26T11:08:46.349-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T11:08:46.350-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Ticket{ticketId=2, userId=2, amount=250.0, description='Office supplies reimbursement', status='APP (truncated)...]
+2024-12-26T11:08:46.353-05:00 DEBUG 8349 --- [demo 2] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T11:09:17.786-05:00  INFO 8349 --- [demo 2] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T11:09:17.799-05:00  INFO 8349 --- [demo 2] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T11:09:17.804-05:00  INFO 8349 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T11:09:17.809-05:00  INFO 8349 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T11:09:18.083-05:00  INFO 8349 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T11:44:36.699-05:00  INFO 13260 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : Starting MainApplication using Java 23.0.1 with PID 13260 (/Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend/target/classes started by davidahn in /Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend)
+2024-12-26T11:44:36.702-05:00 DEBUG 13260 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T11:44:36.703-05:00  INFO 13260 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T11:44:36.773-05:00  INFO 13260 --- [demo 2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-26T11:44:36.773-05:00  INFO 13260 --- [demo 2] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-26T11:44:37.773-05:00  INFO 13260 --- [demo 2] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T11:44:37.906-05:00  INFO 13260 --- [demo 2] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2024-12-26T11:44:38.680-05:00  INFO 13260 --- [demo 2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T11:44:38.707-05:00  INFO 13260 --- [demo 2] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T11:44:38.708-05:00  INFO 13260 --- [demo 2] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-26T11:44:38.781-05:00  INFO 13260 --- [demo 2] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T11:44:38.782-05:00  INFO 13260 --- [demo 2] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2008 ms
+2024-12-26T11:44:38.867-05:00  INFO 13260 --- [demo 2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T11:44:39.647-05:00  INFO 13260 --- [demo 2] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@752e7326
+2024-12-26T11:44:39.648-05:00  INFO 13260 --- [demo 2] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T11:44:39.664-05:00  INFO 13260 --- [demo 2] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://database-1.cneoguq8celc.us-east-2.rds.amazonaws.com:5432/postgres'
+2024-12-26T11:44:39.771-05:00 DEBUG 13260 --- [demo 2] [restartedMain] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-12-26T11:44:39.895-05:00  INFO 13260 --- [demo 2] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T11:44:39.999-05:00  INFO 13260 --- [demo 2] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T11:44:40.049-05:00  INFO 13260 --- [demo 2] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T11:44:40.452-05:00  INFO 13260 --- [demo 2] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T11:44:40.809-05:00  WARN 13260 --- [demo 2] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T11:44:40.993-05:00  INFO 13260 --- [demo 2] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T11:44:42.184-05:00  INFO 13260 --- [demo 2] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T11:44:42.764-05:00  INFO 13260 --- [demo 2] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T11:44:43.251-05:00  WARN 13260 --- [demo 2] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T11:44:43.382-05:00 DEBUG 13260 --- [demo 2] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2024-12-26T11:44:43.495-05:00 DEBUG 13260 --- [demo 2] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T11:44:43.591-05:00 DEBUG 13260 --- [demo 2] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T11:44:43.652-05:00 DEBUG 13260 --- [demo 2] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T11:44:43.777-05:00  INFO 13260 --- [demo 2] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-26T11:44:43.818-05:00  INFO 13260 --- [demo 2] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T11:44:43.830-05:00  INFO 13260 --- [demo 2] [restartedMain] com.example.project_1.MainApplication    : Started MainApplication in 7.797 seconds (process running for 8.534)
+2024-12-26T11:44:58.899-05:00  INFO 13260 --- [demo 2] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T11:44:58.900-05:00  INFO 13260 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T11:44:58.900-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-26T11:44:58.900-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-26T11:44:58.901-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-26T11:44:58.901-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@44971116
+2024-12-26T11:44:58.902-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@62177181
+2024-12-26T11:44:58.902-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-26T11:44:58.902-05:00  INFO 13260 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-26T11:44:58.926-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/tickets/2", parameters={}
+2024-12-26T11:44:58.950-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getTicketById(Integer)
+2024-12-26T11:44:59.312-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T11:44:59.317-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Ticket{ticketId=2, userId=2, amount=250.0, description='Office supplies reimbursement', status='APPR (truncated)...]
+2024-12-26T11:44:59.342-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T11:45:07.919-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/acounts", parameters={}
+2024-12-26T11:45:07.927-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-26T11:45:07.930-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-12-26T11:45:07.943-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource acounts.]
+2024-12-26T11:45:07.944-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-12-26T11:45:07.966-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-12-26T11:45:07.968-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-26T11:45:07.979-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T11:45:07.979-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 26 11:45:07 EST 2024, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2024-12-26T11:45:07.990-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-12-26T11:45:12.291-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/acount", parameters={}
+2024-12-26T11:45:12.292-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-12-26T11:45:12.294-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-12-26T11:45:12.294-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource acount.]
+2024-12-26T11:45:12.294-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-12-26T11:45:12.295-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-12-26T11:45:12.295-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-26T11:45:12.296-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T11:45:12.297-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 26 11:45:12 EST 2024, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2024-12-26T11:45:12.298-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-12-26T11:45:19.309-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/accounts", parameters={}
+2024-12-26T11:45:19.309-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.AccountController#getAllAccounts()
+2024-12-26T11:45:19.310-05:00  INFO 13260 --- [demo 2] [http-nio-8080-exec-5] c.e.project_1.service.AccountService     : Fetching all accounts...
+2024-12-26T11:45:19.613-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-5] c.e.project_1.service.AccountService     : Fetched accounts: [Account{accountId=1, username='john_doe', password='password123', role=EMPLOYEE}, Account{accountId=2, username='jane_doe', password='password456', role=MANAGER}, Account{accountId=3, username='employee1', password='password789', role=EMPLOYEE}, Account{accountId=5, username='dahn0209', password='HomieHomie12!', role=EMPLOYEE}, Account{accountId=6, username='new_user', password='secure_password', role=EMPLOYEE}, Account{accountId=7, username='new_user_1', password='secure_password_1', role=EMPLOYEE}, Account{accountId=8, username='John0209@gmail.com', password='HomieHomie12!', role=EMPLOYEE}, Account{accountId=9, username='JohnWall0209', password='HomieHomie12!', role=EMPLOYEE}, Account{accountId=10, username='Daming209', password='HomieHomie12!', role=EMPLOYEE}, Account{accountId=11, username='dahn0209@gmail.com', password='HomieHomie12!', role=EMPLOYEE}, Account{accountId=12, username='new_name', password='homiehomie12!', role=EMPLOYEE}, Account{accountId=13, username='new_type', password='HomieHOmie12!', role=EMPLOYEE}, Account{accountId=14, username='homie', password='HomieHomie12!', role=EMPLOYEE}]
+2024-12-26T11:45:19.619-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-26T11:45:19.619-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Account{accountId=1, username='john_doe', password='password123', role=EMPLOYEE}, Account{accountId (truncated)...]
+2024-12-26T11:45:19.623-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T11:46:15.685-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/tickets/user/1", parameters={}
+2024-12-26T11:46:15.686-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getTicketsByUserId(Integer)
+2024-12-26T11:46:15.792-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T11:46:15.793-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Ticket{ticketId=7, userId=1, amount=12.0, description='christmas gift', status='PENDING', submissio (truncated)...]
+2024-12-26T11:46:15.797-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T11:46:15.799-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/tickets/user/1", parameters={}
+2024-12-26T11:46:15.800-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.project_1.controller.TicketController#getTicketsByUserId(Integer)
+2024-12-26T11:46:15.863-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-12-26T11:46:15.863-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Ticket{ticketId=7, userId=1, amount=12.0, description='christmas gift', status='PENDING', submissio (truncated)...]
+2024-12-26T11:46:15.933-05:00 DEBUG 13260 --- [demo 2] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T11:50:07.720-05:00  INFO 13260 --- [demo 2] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T11:50:07.734-05:00  INFO 13260 --- [demo 2] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T11:50:07.746-05:00  INFO 13260 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T11:50:07.758-05:00  INFO 13260 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T11:50:08.040-05:00  INFO 13260 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

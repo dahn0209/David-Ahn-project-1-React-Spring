@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Node",    // Use Node.js module resolution
+    "jsx": "react-jsx",            // Support JSX files
+    "esModuleInterop": true,       // Support ES module imports
+    "allowSyntheticDefaultImports": true, // Allow default imports for CSS and other files
+    "resolveJsonModule": true,     // Support JSON module imports
+    "isolatedModules": true,       // Ensure each file is treated as a module
+    "skipLibCheck": true,          // Skip type checking for declaration files
+    "baseUrl": "./src",            // Set the base URL for module imports
+    "paths": {
+      "*": ["*","types/*"]
+    }
+  },
+  "include": ["src", "styles.d.ts"]
+}
+
+
+
+
+
