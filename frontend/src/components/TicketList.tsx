@@ -1,19 +1,22 @@
 import React from 'react';
 import { useTicketContext } from '../context/TicketContext';
+import styles from '../styles/TicketList.module.css';
 
 const TicketList: React.FC = () => {
   const { tickets } = useTicketContext();
 
   return (
-    <div>
-      <h2>Your Tickets</h2>
+    <div className={styles.container}>
+      <h2 className={styles.heading}>Your Tickets</h2>
       {tickets.length === 0 ? (
-        <p>No tickets available.</p>
+        <p className={styles.message}>No tickets available.</p>
       ) : (
-        <ul>
+        <ul className={styles.list}>
           {tickets.map((ticket) => (
-            <li key={ticket.ticketId}>
-              {ticket.description} - {ticket.status} (${ticket.amount})
+            <li className={styles.listItem} key={ticket.ticketId}>
+              <span className={styles.description}>{ticket.description}</span>
+              <span className={styles.status}>{ticket.status}</span>
+              <span className={styles.amount}>${ticket.amount.toFixed(2)}</span>
             </li>
           ))}
         </ul>

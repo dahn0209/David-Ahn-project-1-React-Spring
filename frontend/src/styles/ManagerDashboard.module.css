@@ -1,0 +1,115 @@
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .error {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .listItem {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .ticketDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    padding: 10px 0;
+  }
+  
+  .ticketDetails span {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .description {
+    background-color: #eef2f3;
+    color: #1c3a63;
+    border: 1px solid #d0dfe8;
+    font-size: 1rem;
+    font-style: italic;
+  }
+  
+  .status {
+    background-color: #f0f9f4;
+    color: #28a745;
+    border: 1px dashed #a5d6a7;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+  }
+  
+  .amount {
+    background-color: #fff7e6;
+    color: #f57c00;
+    border: 1px solid #ffe0b2;
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .button.approve {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .button.approve:disabled {
+    background-color: #a5d6a7;
+  }
+  
+  .button.deny {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .button.deny:disabled {
+    background-color: #f5a5a5;
+  }
+  

@@ -19,7 +19,6 @@ const Register: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>Register</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {success && <p style={{ color: 'green' }}>{success}</p>}
       <div>
