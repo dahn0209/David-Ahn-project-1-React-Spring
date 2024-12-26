@@ -641,3 +641,78 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2024-12-26T13:59:30.590-05:00  INFO 22399 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-12-26T13:59:30.591-05:00  INFO 22399 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-12-26T13:59:30.881-05:00  INFO 22399 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T14:21:08.631-05:00  INFO 23701 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Starting TicketRepositoryTest using Java 23.0.1 with PID 23701 (started by davidahn in /Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend)
+2024-12-26T14:21:08.634-05:00 DEBUG 23701 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T14:21:08.635-05:00  INFO 23701 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T14:21:09.411-05:00  INFO 23701 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T14:21:09.746-05:00  INFO 23701 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 308 ms. Found 2 JPA repository interfaces.
+2024-12-26T14:21:09.880-05:00  INFO 23701 --- [demo 2] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-12-26T14:21:10.220-05:00  INFO 23701 --- [demo 2] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:79eaf373-5aa0-428c-ad87-7bba852b934b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-12-26T14:21:11.070-05:00  INFO 23701 --- [demo 2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T14:21:11.244-05:00  INFO 23701 --- [demo 2] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-26T14:21:11.340-05:00  INFO 23701 --- [demo 2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T14:21:12.127-05:00  INFO 23701 --- [demo 2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T14:21:12.260-05:00  WARN 23701 --- [demo 2] [main] org.hibernate.dialect.Dialect            : HHH000511: The 2.3.232 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2024-12-26T14:21:12.275-05:00  WARN 23701 --- [demo 2] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T14:21:12.327-05:00  INFO 23701 --- [demo 2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@1926a40f']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T14:21:14.584-05:00  INFO 23701 --- [demo 2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T14:21:14.749-05:00  INFO 23701 --- [demo 2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:21:15.560-05:00  INFO 23701 --- [demo 2] [main] c.e.p.repository.TicketRepositoryTest    : Started TicketRepositoryTest in 7.957 seconds (process running for 11.028)
+2024-12-26T14:21:16.993-05:00  INFO 23701 --- [demo 2] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.project_1.repository.AccountRepositoryTest]: AccountRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-26T14:21:17.020-05:00  INFO 23701 --- [demo 2] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.project_1.MainApplication for test class com.example.project_1.repository.AccountRepositoryTest
+2024-12-26T14:21:17.166-05:00  INFO 23701 --- [demo 2] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.project_1.MainApplicationTests]: MainApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-26T14:21:17.181-05:00  INFO 23701 --- [demo 2] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.project_1.MainApplication for test class com.example.project_1.MainApplicationTests
+2024-12-26T14:21:17.212-05:00  INFO 23701 --- [demo 2] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-12-26T14:21:17.264-05:00  INFO 23701 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Starting MainApplicationTests using Java 23.0.1 with PID 23701 (started by davidahn in /Users/davidahn/revature_training/David-Ahn-project-1-React-Spring/backend)
+2024-12-26T14:21:17.264-05:00 DEBUG 23701 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-26T14:21:17.264-05:00  INFO 23701 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T14:21:17.267-05:00 DEBUG 23701 --- [demo 2] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@31ccc439
+2024-12-26T14:21:17.844-05:00  INFO 23701 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T14:21:17.859-05:00  INFO 23701 --- [demo 2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2024-12-26T14:21:18.277-05:00  INFO 23701 --- [demo 2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T14:21:18.280-05:00  INFO 23701 --- [demo 2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T14:21:18.296-05:00  INFO 23701 --- [demo 2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T14:21:18.299-05:00  INFO 23701 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T14:21:19.468-05:00  INFO 23701 --- [demo 2] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@73a09825
+2024-12-26T14:21:19.471-05:00  INFO 23701 --- [demo 2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T14:21:19.531-05:00  WARN 23701 --- [demo 2] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T14:21:19.589-05:00  INFO 23701 --- [demo 2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-26T14:21:19.704-05:00  INFO 23701 --- [demo 2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T14:21:19.862-05:00  INFO 23701 --- [demo 2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:21:20.281-05:00  WARN 23701 --- [demo 2] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T14:21:20.462-05:00 DEBUG 23701 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2024-12-26T14:21:20.754-05:00 DEBUG 23701 --- [demo 2] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T14:21:20.832-05:00 DEBUG 23701 --- [demo 2] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T14:21:20.945-05:00 DEBUG 23701 --- [demo 2] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T14:21:21.059-05:00  INFO 23701 --- [demo 2] [main] c.e.project_1.MainApplicationTests       : Started MainApplicationTests in 3.848 seconds (process running for 16.528)
+2024-12-26T14:21:22.414-05:00  INFO 23701 --- [demo 2] [main] c.e.project_1.service.AccountService     : Creating a new account for username: newUser
+2024-12-26T14:21:22.415-05:00  INFO 23701 --- [demo 2] [main] c.e.project_1.service.AccountService     : Account created successfully: Account{accountId=1, username='newUser', password='newPass', role=EMPLOYEE}
+2024-12-26T14:21:22.421-05:00  INFO 23701 --- [demo 2] [main] c.e.project_1.service.AccountService     : Attempting login for username: user1
+2024-12-26T14:21:22.421-05:00  INFO 23701 --- [demo 2] [main] c.e.project_1.service.AccountService     : Login successful for username: user1
+2024-12-26T14:21:22.431-05:00  INFO 23701 --- [demo 2] [main] c.e.project_1.service.AccountService     : Attempting login for username: nonexistentUser
+2024-12-26T14:21:22.432-05:00  WARN 23701 --- [demo 2] [main] c.e.project_1.service.AccountService     : Username not found: nonexistentUser
+2024-12-26T14:21:22.440-05:00  INFO 23701 --- [demo 2] [main] c.e.project_1.service.AccountService     : Fetching all accounts...
+2024-12-26T14:21:22.441-05:00 DEBUG 23701 --- [demo 2] [main] c.e.project_1.service.AccountService     : Fetched accounts: [Account{accountId=1, username='user1', password='pass1', role=EMPLOYEE}, Account{accountId=2, username='user2', password='pass2', role=MANAGER}]
+2024-12-26T14:21:22.449-05:00  INFO 23701 --- [demo 2] [main] c.e.project_1.service.AccountService     : Checking if username exists: existingUser
+2024-12-26T14:21:22.450-05:00 DEBUG 23701 --- [demo 2] [main] c.e.project_1.service.AccountService     : Username 'existingUser' exists: true
+2024-12-26T14:21:22.458-05:00  INFO 23701 --- [demo 2] [main] c.e.project_1.service.AccountService     : Attempting login for username: user1
+2024-12-26T14:21:22.459-05:00  WARN 23701 --- [demo 2] [main] c.e.project_1.service.AccountService     : Invalid password for username: user1
+2024-12-26T14:21:22.501-05:00  INFO 23701 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:21:22.508-05:00 DEBUG 23701 --- [demo 2] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@31ccc439, started on Thu Dec 26 14:21:17 EST 2024
+2024-12-26T14:21:22.513-05:00  INFO 23701 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T14:21:22.514-05:00  INFO 23701 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T14:21:22.785-05:00  INFO 23701 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

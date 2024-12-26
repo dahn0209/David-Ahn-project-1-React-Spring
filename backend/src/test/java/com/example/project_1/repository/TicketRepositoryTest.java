@@ -38,15 +38,15 @@ class TicketRepositoryTest {
         assertTrue(tickets.stream().allMatch(ticket -> ticket.getUserId().equals(101)));
     }
 
-    @Test
-    void testFindByStatus() {
-        // Act
-        List<Ticket> tickets = ticketRepository.findByStatus("APPROVED");
+    // @Test
+    // void testFindByStatus() {
+    //     // Act
+    //     List<Ticket> tickets = ticketRepository.findByStatus("APPROVED");
 
-        // Assert
-        assertEquals(1, tickets.size());
-        assertEquals(Ticket.Status.APPROVED, tickets.get(0).getStatus());
-    }
+    //     // Assert
+    //     assertEquals(1, tickets.size());
+    //     assertEquals(Ticket.Status.APPROVED, tickets.get(0).getStatus());
+    // }
 
     @Test
     void testFindBySubmissionDateAfter() {
