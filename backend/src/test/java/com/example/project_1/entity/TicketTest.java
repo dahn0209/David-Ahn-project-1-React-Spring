@@ -1,46 +1,84 @@
-// package com.example.project_1.entity;
+package com.example.project_1.entity;
 
-// import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test;
 
-// import java.time.LocalDateTime;
+import java.time.LocalDateTime;
 
-// import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-// class TicketTest {
+class TicketTest {
 
-//     @Test
-//     void testTicketConstructor() {
-//         LocalDateTime now = LocalDateTime.now();
-//         Ticket ticket = new Ticket(1, 101, 200.0, "Sample Ticket", Ticket.Status.PENDING, now);
+    @Test
+    void testTicketConstructorAndGetters() {
+        // Arrange
+        Integer ticketId = 1;
+        Integer userId = 101;
+        Double amount = 150.0;
+        String description = "Test description";
+        Ticket.Status status = Ticket.Status.APPROVED;
+        LocalDateTime submissionDate = LocalDateTime.now();
 
-//         assertEquals(1, ticket.getTicketId());
-//         assertEquals(101, ticket.getUserId());
-//         assertEquals(200.0, ticket.getAmount());
-//         assertEquals("Sample Ticket", ticket.getDescription());
-//         assertEquals(Ticket.Status.PENDING, ticket.getStatus());
-//         assertEquals(now, ticket.getSubmissionDate());
-//     }
+        // Act
+        Ticket ticket = new Ticket(ticketId, userId, amount, description, status, submissionDate);
 
-//     @Test
-//     void testTicketEqualsAndHashCode() {
-//         LocalDateTime now = LocalDateTime.now();
-//         Ticket ticket1 = new Ticket(1, 101, 200.0, "Sample Ticket", Ticket.Status.PENDING, now);
-//         Ticket ticket2 = new Ticket(1, 101, 200.0, "Sample Ticket", Ticket.Status.PENDING, now);
-//         Ticket ticket3 = new Ticket(2, 102, 300.0, "Another Ticket", Ticket.Status.APPROVED, now);
+        // Assert
+        assertEquals(ticketId, ticket.getTicketId());
+        assertEquals(userId, ticket.getUserId());
+        assertEquals(amount, ticket.getAmount());
+        assertEquals(description, ticket.getDescription());
+        assertEquals(status, ticket.getStatus());
+        assertEquals(submissionDate, ticket.getSubmissionDate());
+    }
 
-//         assertEquals(ticket1, ticket2, "Tickets with the same ID and properties should be equal.");
-//         assertNotEquals(ticket1, ticket3, "Tickets with different IDs should not be equal.");
+    @Test
+    void testSetters() {
+        // Arrange
+        Ticket ticket = new Ticket();
+        LocalDateTime now = LocalDateTime.now();
 
-//         assertEquals(ticket1.hashCode(), ticket2.hashCode(), "HashCodes for equal tickets should match.");
-//         assertNotEquals(ticket1.hashCode(), ticket3.hashCode(), "HashCodes for different tickets should not match.");
-//     }
+        // Act
+        ticket.setTicketId(2);
+        ticket.setUserId(102);
+        ticket.setAmount(200.0);
+        ticket.setDescription("Updated description");
+        ticket.setStatus(Ticket.Status.DENIED);
+        ticket.setSubmissionDate(now);
 
-//     @Test
-//     void testTicketToString() {
-//         LocalDateTime now = LocalDateTime.now();
-//         Ticket ticket = new Ticket(1, 101, 200.0, "Sample Ticket", Ticket.Status.PENDING, now);
+        // Assert
+        assertEquals(2, ticket.getTicketId());
+        assertEquals(102, ticket.getUserId());
+        assertEquals(200.0, ticket.getAmount());
+        assertEquals("Updated description", ticket.getDescription());
+        assertEquals(Ticket.Status.DENIED, ticket.getStatus());
+        assertEquals(now, ticket.getSubmissionDate());
+    }
 
-//         String expected = "Ticket{ticketId=1, userId=101, amount=200.0, description='Sample Ticket', status=PENDING, submissionDate=" + now + "}";
-//         assertEquals(expected, ticket.toString(), "toString method should produce the expected format.");
-//     }
-// }
+    @Test
+    void testEqualsAndHashCode() {
+        // Arrange
+        LocalDateTime now = LocalDateTime.now();
+        Ticket ticket1 = new Ticket(1, 101, 150.0, "Test description", Ticket.Status.APPROVED, now);
+        Ticket ticket2 = new Ticket(1, 101, 150.0, "Test description", Ticket.Status.APPROVED, now);
+        Ticket ticket3 = new Ticket(2, 102, 200.0, "Other description", Ticket.Status.PENDING, now);
+
+        // Act & Assert
+        assertEquals(ticket1, ticket2);
+        assertNotEquals(ticket1, ticket3);
+        assertEquals(ticket1.hashCode(), ticket2.hashCode());
+        assertNotEquals(ticket1.hashCode(), ticket3.hashCode());
+    }
+
+    @Test
+    void testToString() {
+        // Arrange
+        LocalDateTime now = LocalDateTime.now();
+        Ticket ticket = new Ticket(1, 101, 150.0, "Test description", Ticket.Status.APPROVED, now);
+
+        // Act
+        String toString = ticket.toString();
+
+        // Assert
+        assertTrue(toString.contains("Test description"));
+        assertTrue(toString.contains("APPROVED"));
+    }
+}

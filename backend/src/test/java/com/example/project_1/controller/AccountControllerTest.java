@@ -1,86 +1,103 @@
-// package com.example.project_1.controller;
+package com.example.project_1.controller;
 
-// import com.example.project_1.entity.Account;
-// import com.example.project_1.service.AccountService;
-// import org.junit.jupiter.api.BeforeEach;
-// import org.junit.jupiter.api.Test;
-// import org.mockito.Mock;
-// import org.mockito.MockitoAnnotations;
-// import org.slf4j.Logger;
-// import org.slf4j.LoggerFactory;
-// import org.springframework.beans.factory.annotation.Autowired;
-// import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-// import org.springframework.http.MediaType;
-// import org.springframework.test.web.servlet.MockMvc;
+import com.example.project_1.entity.Account;
+import com.example.project_1.service.AccountService;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.springframework.http.ResponseEntity;
 
-// import java.util.List;
+import java.util.Arrays;
+import java.util.List;
 
-// import static org.mockito.Mockito.*;
-// import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-// import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-// import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-// import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
 
-// @WebMvcTest(AccountController.class)
-// class AccountControllerTest {
+class AccountControllerTest {
 
-//     private static final Logger logger = LoggerFactory.getLogger(AccountControllerTest.class);
+    @InjectMocks
+    private AccountController accountController;
 
-//     @Autowired
-//     private MockMvc mockMvc;
+    @Mock
+    private AccountService accountService;
 
-//     @Mock
-//     private AccountService accountService;
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.openMocks(this);
+    }
 
-//     @BeforeEach
-//     void setUp() {
-//         MockitoAnnotations.openMocks(this);
-//         logger.debug("Mocks initialized for AccountControllerTest.");
-//     }
+    @Test
+    void testGetAllAccounts() {
+        // Arrange
+        Account account1 = new Account(1, "user1", "pass1", Account.Role.EMPLOYEE);
+        Account account2 = new Account(2, "user2", "pass2", Account.Role.MANAGER);
+        when(accountService.getAllAccounts()).thenReturn(Arrays.asList(account1, account2));
 
-//     @Test
-//     void testGetAllAccounts() throws Exception {
-//         logger.info("Starting test: testGetAllAccounts");
-//         List<Account> accounts = List.of(new Account(1, "user1", "password1", Account.Role.EMPLOYEE));
-//         when(accountService.getAllAccounts()).thenReturn(accounts);
+        // Act
+        ResponseEntity<Object> response = accountController.getAllAccounts();
 
-//         mockMvc.perform(get("/accounts"))
-//                 .andExpect(status().isOk())
-//                 .andExpect(jsonPath("$[0].username").value("user1"));
+        // Assert
+        assertEquals(200, response.getStatusCodeValue());
+        assertEquals(2, ((List<Account>) response.getBody()).size());
+        verify(accountService, times(1)).getAllAccounts();
+    }
 
-//         verify(accountService, times(1)).getAllAccounts();
-//         logger.info("Completed test: testGetAllAccounts");
-//     }
+    @Test
+    void testRegisterAccountSuccess() {
+        // Arrange
+        Account newAccount = new Account(null, "user1", "pass1", Account.Role.EMPLOYEE);
+        when(accountService.createAccount(newAccount)).thenReturn(newAccount);
 
-//     @Test
-//     void testRegisterAccount_Success() throws Exception {
-//         logger.info("Starting test: testRegisterAccount_Success");
-//         Account account = new Account(1, "newUser", "newPassword", Account.Role.EMPLOYEE);
-//         when(accountService.createAccount(any(Account.class))).thenReturn(account);
+        // Act
+        ResponseEntity<Object> response = accountController.registerAccount(newAccount);
 
-//         mockMvc.perform(post("/accounts/register")
-//                         .contentType(MediaType.APPLICATION_JSON)
-//                         .content("{\"username\":\"newUser\", \"password\":\"newPassword\"}"))
-//                 .andExpect(status().isOk())
-//                 .andExpect(jsonPath("$.username").value("newUser"));
+        // Assert
+        assertEquals(200, response.getStatusCodeValue());
+        verify(accountService, times(1)).createAccount(newAccount);
+    }
 
-//         verify(accountService, times(1)).createAccount(any(Account.class));
-//         logger.info("Completed test: testRegisterAccount_Success");
-//     }
+    @Test
+    void testRegisterAccountUsernameExists() {
+        // Arrange
+        Account newAccount = new Account(null, "user1", "pass1", Account.Role.EMPLOYEE);
+        when(accountService.usernameExists("user1")).thenReturn(true);
 
-//     @Test
-//     void testLoginAccount_Success() throws Exception {
-//         logger.info("Starting test: testLoginAccount_Success");
-//         Account account = new Account(1, "validUser", "validPassword", Account.Role.EMPLOYEE);
-//         when(accountService.login("validUser", "validPassword")).thenReturn(account);
+        // Act
+        ResponseEntity<Object> response = accountController.registerAccount(newAccount);
 
-//         mockMvc.perform(post("/accounts/login")
-//                         .contentType(MediaType.APPLICATION_JSON)
-//                         .content("{\"username\":\"validUser\", \"password\":\"validPassword\"}"))
-//                 .andExpect(status().isOk())
-//                 .andExpect(jsonPath("$.username").value("validUser"));
+        // Assert
+        assertEquals(409, response.getStatusCodeValue());
+        verify(accountService, times(1)).usernameExists("user1");
+    }
 
-//         verify(accountService, times(1)).login("validUser", "validPassword");
-//         logger.info("Completed test: testLoginAccount_Success");
-//     }
-// }
+    @Test
+    void testLoginAccountSuccess() throws Exception {
+        // Arrange
+        Account account = new Account(1, "user1", "pass1", Account.Role.EMPLOYEE);
+        when(accountService.login("user1", "pass1")).thenReturn(account);
+
+        // Act
+        ResponseEntity<Object> response = accountController.loginAccount(account);
+
+        // Assert
+        assertEquals(200, response.getStatusCodeValue());
+        assertEquals(account, response.getBody());
+        verify(accountService, times(1)).login("user1", "pass1");
+    }
+
+    @Test
+    void testLoginAccountFailure() throws Exception {
+        // Arrange
+        Account account = new Account(1, "user1", "wrongpass", Account.Role.EMPLOYEE);
+        when(accountService.login("user1", "wrongpass")).thenThrow(new Exception("Invalid password"));
+
+        // Act
+        ResponseEntity<Object> response = accountController.loginAccount(account);
+
+        // Assert
+        assertEquals(401, response.getStatusCodeValue());
+        verify(accountService, times(1)).login("user1", "wrongpass");
+    }
+}

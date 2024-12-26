@@ -1,58 +1,59 @@
-// package com.example.project_1.repository;
+package com.example.project_1.repository;
 
-// import com.example.project_1.entity.Account;
-// import org.junit.jupiter.api.Test;
-// import org.springframework.beans.factory.annotation.Autowired;
-// import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import com.example.project_1.entity.Account;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
-// import java.util.Optional;
+import java.util.Optional;
 
-// import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-// @DataJpaTest
-// class AccountRepositoryTest {
+@DataJpaTest
+class AccountRepositoryTest {
 
-//     @Autowired
-//     private AccountRepository accountRepository;
+    @Autowired
+    private AccountRepository accountRepository;
 
-//     @Test
-//     void testFindByUsername() {
-//         // Arrange
-//         Account account = new Account("testUser", "password123", Account.Role.EMPLOYEE);
-//         accountRepository.save(account);
+    @BeforeEach
+    void setUp() {
+        Account account1 = new Account(null, "user1", "pass1", Account.Role.EMPLOYEE);
+        Account account2 = new Account(null, "user2", "pass2", Account.Role.MANAGER);
 
-//         // Act
-//         Optional<Account> foundAccount = accountRepository.findByUsername("testUser");
+        accountRepository.save(account1);
+        accountRepository.save(account2);
+    }
 
-//         // Assert
-//         assertTrue(foundAccount.isPresent(), "Account should be found by username.");
-//         assertEquals("testUser", foundAccount.get().getUsername());
-//     }
+    @Test
+    void testFindByUsername() {
+        // Act
+        Optional<Account> account = accountRepository.findByUsername("user1");
 
-//     @Test
-//     void testFindByAccountId() {
-//         // Arrange
-//         Account account = new Account("testUser", "password123", Account.Role.EMPLOYEE);
-//         Account savedAccount = accountRepository.save(account);
+        // Assert
+        assertTrue(account.isPresent());
+        assertEquals("user1", account.get().getUsername());
+    }
 
-//         // Act
-//         Optional<Account> foundAccount = accountRepository.findByAccountId(savedAccount.getAccountId());
+    @Test
+    void testFindByUsernameNotFound() {
+        // Act
+        Optional<Account> account = accountRepository.findByUsername("nonexistent");
 
-//         // Assert
-//         assertTrue(foundAccount.isPresent(), "Account should be found by account ID.");
-//         assertEquals(savedAccount.getAccountId(), foundAccount.get().getAccountId());
-//     }
+        // Assert
+        assertFalse(account.isPresent());
+    }
 
-//     @Test
-//     void testSaveAccount() {
-//         // Arrange
-//         Account account = new Account("newUser", "newPassword", Account.Role.MANAGER);
+    @Test
+    void testFindByAccountId() {
+        // Arrange
+        Account savedAccount = accountRepository.save(new Account(null, "newUser", "newPass", Account.Role.EMPLOYEE));
 
-//         // Act
-//         Account savedAccount = accountRepository.save(account);
+        // Act
+        Optional<Account> account = accountRepository.findByAccountId(savedAccount.getAccountId());
 
-//         // Assert
-//         assertNotNull(savedAccount.getAccountId(), "Account ID should not be null after saving.");
-//         assertEquals("newUser", savedAccount.getUsername());
-//     }
-// }
+        // Assert
+        assertTrue(account.isPresent());
+        assertEquals(savedAccount.getAccountId(), account.get().getAccountId());
+    }
+}

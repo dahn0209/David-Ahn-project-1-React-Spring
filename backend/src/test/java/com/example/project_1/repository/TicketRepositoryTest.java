@@ -1,65 +1,63 @@
-// package com.example.project_1.repository;
+package com.example.project_1.repository;
 
-// import com.example.project_1.entity.Ticket;
-// import com.example.project_1.entity.Ticket.Status;
-// import org.junit.jupiter.api.Test;
-// import org.springframework.beans.factory.annotation.Autowired;
-// import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import com.example.project_1.entity.Ticket;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
-// import java.time.LocalDateTime;
-// import java.util.List;
+import java.time.LocalDateTime;
+import java.util.List;
 
-// import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-// @DataJpaTest
-// class TicketRepositoryTest {
+@DataJpaTest
+class TicketRepositoryTest {
 
-//     @Autowired
-//     private TicketRepository ticketRepository;
+    @Autowired
+    private TicketRepository ticketRepository;
 
-//     @Test
-//     void testFindByUserId() {
-//         // Arrange
-//         Ticket ticket1 = new Ticket(1, 101, 100.0, "Test Ticket 1", Status.PENDING, LocalDateTime.now());
-//         Ticket ticket2 = new Ticket(2, 101, 200.0, "Test Ticket 2", Status.APPROVED, LocalDateTime.now());
-//         ticketRepository.save(ticket1);
-//         ticketRepository.save(ticket2);
+    @BeforeEach
+    void setUp() {
+        Ticket ticket1 = new Ticket(null, 101, 100.0, "Ticket1", Ticket.Status.PENDING, LocalDateTime.now().minusDays(1));
+        Ticket ticket2 = new Ticket(null, 102, 200.0, "Ticket2", Ticket.Status.APPROVED, LocalDateTime.now());
+        Ticket ticket3 = new Ticket(null, 101, 300.0, "Ticket3", Ticket.Status.DENIED, LocalDateTime.now().minusDays(2));
 
-//         // Act
-//         List<Ticket> tickets = ticketRepository.findByUserId(101);
+        ticketRepository.save(ticket1);
+        ticketRepository.save(ticket2);
+        ticketRepository.save(ticket3);
+    }
 
-//         // Assert
-//         assertEquals(2, tickets.size(), "Should retrieve 2 tickets for user ID 101.");
-//     }
+    @Test
+    void testFindByUserId() {
+        // Act
+        List<Ticket> tickets = ticketRepository.findByUserId(101);
 
-//     @Test
-//     void testFindByStatus() {
-//         // Arrange
-//         Ticket ticket = new Ticket(1, 102, 300.0, "Pending Ticket", Status.PENDING, LocalDateTime.now());
-//         ticketRepository.save(ticket);
+        // Assert
+        assertEquals(2, tickets.size());
+        assertTrue(tickets.stream().allMatch(ticket -> ticket.getUserId().equals(101)));
+    }
 
-//         // Act
-//         List<Ticket> tickets = ticketRepository.findByStatus("PENDING");
+    @Test
+    void testFindByStatus() {
+        // Act
+        List<Ticket> tickets = ticketRepository.findByStatus("APPROVED");
 
-//         // Assert
-//         assertEquals(1, tickets.size(), "Should retrieve 1 ticket with status PENDING.");
-//         assertEquals(Status.PENDING, tickets.get(0).getStatus());
-//     }
+        // Assert
+        assertEquals(1, tickets.size());
+        assertEquals(Ticket.Status.APPROVED, tickets.get(0).getStatus());
+    }
 
-//     @Test
-//     void testFindBySubmissionDateAfter() {
-//         // Arrange
-//         LocalDateTime date = LocalDateTime.now().minusDays(1);
-//         Ticket ticket1 = new Ticket(1, 103, 400.0, "Old Ticket", Status.DENIED, date.minusDays(1));
-//         Ticket ticket2 = new Ticket(2, 103, 500.0, "New Ticket", Status.APPROVED, LocalDateTime.now());
-//         ticketRepository.save(ticket1);
-//         ticketRepository.save(ticket2);
+    @Test
+    void testFindBySubmissionDateAfter() {
+        // Arrange
+        LocalDateTime date = LocalDateTime.now().minusDays(1);
 
-//         // Act
-//         List<Ticket> tickets = ticketRepository.findBySubmissionDateAfter(date);
+        // Act
+        List<Ticket> tickets = ticketRepository.findBySubmissionDateAfter(date);
 
-//         // Assert
-//         assertEquals(1, tickets.size(), "Should retrieve 1 ticket submitted after the given date.");
-//         assertEquals("New Ticket", tickets.get(0).getDescription());
-//     }
-// }
+        // Assert
+        assertEquals(1, tickets.size());
+        assertTrue(tickets.get(0).getSubmissionDate().isAfter(date));
+    }
+}
