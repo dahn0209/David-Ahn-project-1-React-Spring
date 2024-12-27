@@ -1572,3 +1572,8 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2024-12-26T17:49:29.003-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
 2024-12-26T17:49:29.003-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Ticket{ticketId=35, userId=5, amount=1.5, description='new ticket for me', status='PENDING', submiss (truncated)...]
 2024-12-26T17:49:29.004-05:00 DEBUG 5897 --- [demo 2] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T21:48:29.095-05:00  INFO 5897 --- [demo 2] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T21:48:29.110-05:00  INFO 5897 --- [demo 2] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T21:48:29.121-05:00  INFO 5897 --- [demo 2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T21:48:29.136-05:00  INFO 5897 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T21:48:29.413-05:00  INFO 5897 --- [demo 2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
