@@ -8,7 +8,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div>
-      <h1>Welcome to the Reimbursement System</h1>
+      <h1>Welcome to the Ticket System</h1>
       {!authState.isAuthenticated ? (
         <div>
           <p>Please log in to access your dashboard:</p>

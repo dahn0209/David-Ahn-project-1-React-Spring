@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={styles.navbar}>
-      <h1 className={styles.title}>Reimbursement App</h1>
+      <h1 className={styles.title}>Ticket App</h1>
       <ul className={styles.navList}>
         <li className={styles.navItem}>
           <Link to="/" className={styles.navLink}>
